@@ -60,11 +60,11 @@ const Navbar = () => {
                     </div>
 
                     {/* Right side buttons */}
-                    <div className="hidden ml-[118px] md:flex items-center gap-[50px]">
+                    <div className="hidden ml-[118px] md:flex items-center ">
                         <button className=" hover:text-orange-500  px-3 py-2 rounded-md text-sm font-medium">
                             Login
                         </button>
-                        <button className="text-white font-normal px-[34px] py-[14px] bg-[#FF3D4F] rounded-full text-[20px] hover:bg-white hover:text-[#FF3D4F] hover:border-[#FF3D4F] hover:border-2 transition-colors duration-300 ease-in-out">
+                        <button className=" ">
                             Sign Up
                         </button>
 

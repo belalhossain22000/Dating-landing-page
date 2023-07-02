@@ -7,5 +7,5 @@
   }
 
   .subText{
-    @apply text-lg font-normal
+    @apply text-lg font-normal 
   }

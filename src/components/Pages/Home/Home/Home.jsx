@@ -1,3 +1,4 @@
+import Features from "../Features/Features";
 import Hero from "../Hero/Hero";
 import PopularMember from "../PopularMember/PopularMember";
 
@@ -6,6 +7,7 @@ const Home = () => {
         <div className="">
          <Hero/>
          <PopularMember/>
+         <Features/>
         </div>
     );
 };

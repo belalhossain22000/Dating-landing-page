@@ -8,17 +8,17 @@ import { FaGooglePlusG, FaFacebookF, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <div className='bg-[#ED3E3E] text-white mt-[251px] relative'>
-            <div className=" flex px-[134px] pb-[55px] pt-[226px] items-center justify-center gap-[180px]">
+        <div className='bg-[#ED3E3E] text-white mt-[80px] md:mt-[251px] relative'>
+            <div className=" md:flex md:w-[1172px] space-y-10 md:space-y-0 md:px-0 text-center md:mx-auto pb-[55px] pt-[226px] items-center justify-between gap-[180px]">
                 <div className='space-y-5'>
 
-                    <div className='flex items-center gap-5'>
+                    <div className='flex items-center justify-center gap-5'>
                         <img src={frame1} alt="" />
                         <h1 className='text-[32px] tex-white font-bold '>Lovelli</h1>
                     </div>
                     <p className='subText'>Dating is a stage of romantic</p>
                     {/* logo div */}
-                    <div className='text-[32px] tex-white font-bold flex items-center gap-5'>
+                    <div className='text-[32px] tex-white font-bold flex items-center justify-center gap-5'>
 
                         <Link> <FaGooglePlusG /></Link>
                         <Link> <FaFacebookF /></Link>

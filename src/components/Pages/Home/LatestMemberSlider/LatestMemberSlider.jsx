@@ -64,8 +64,15 @@ const LatestMemberSlider = () => {
         }
     };
 
+    // const responsiveSlidesPerView = {
+    //     // Define the number of slides per view for different screen sizes
+    //     320: 1, // Small devices
+    //     640: 2, // Medium devices
+    //     1024: 4, // Large devices
+    //   };
+
     return (
-        <div className="mt-16 px-[135px]">
+        <div className="mt-16 w-[1172px] mx-auto">
             <div>
                 <h1 className="heading">Latest Register Member</h1>
                 <p className="subText text-center">

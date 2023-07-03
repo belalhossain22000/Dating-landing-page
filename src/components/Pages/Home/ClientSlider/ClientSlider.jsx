@@ -58,31 +58,33 @@ const slidesData = [
 
 const ClientSlider = () => {
     return (
-        <div className="bg-[#FDECEC] mt-[134px] px-[143px]">
-            {/* heading div/section */}
-            <div>
-                <h1 className="heading pt-[92px] mb-[20px]">Clint Say’s</h1>
-                <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
-            </div>
+        <div className="bg-[#FDECEC] ">
+            <div className="bg-[#FDECEC] mt-[134px] w-[1172px] mx-auto">
+                {/* heading div/section */}
+                <div>
+                    <h1 className="heading pt-[92px] mb-[20px]">Clint Say’s</h1>
+                    <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
+                </div>
 
-            {/* slider section  */}
-            <div className="mt-[40px] pb-[150px]">
-                <Swiper
-                    slidesPerView={3}
-                    spaceBetween={24}
-                    freeMode={true}
-                     pagination={{
-          clickable: true,
-        }}
-                   
-                    className="mySwiper"
-                >
-                   {
-                    slidesData.map((slide, index) =><SwiperSlide key={index}>
-                        <ClientCard slide={slide}></ClientCard>
-                    </SwiperSlide>)
-                   }
-                </Swiper>
+                {/* slider section  */}
+                <div className="mt-[40px] pb-[150px]">
+                    <Swiper
+                        slidesPerView={3}
+                        spaceBetween={24}
+                        freeMode={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+
+                        className="mySwiper"
+                    >
+                        {
+                            slidesData.map((slide, index) => <SwiperSlide key={index}>
+                                <ClientCard slide={slide}></ClientCard>
+                            </SwiperSlide>)
+                        }
+                    </Swiper>
+                </div>
             </div>
         </div>
     );

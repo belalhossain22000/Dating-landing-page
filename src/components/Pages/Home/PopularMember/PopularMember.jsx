@@ -27,17 +27,19 @@ const cardsData = [
 
 const PopularMember = () => {
     return (
-        <div className="bg-[#33357D] mt-[130px]  relative h-[625px]">
-            <div className="pt-[54px]">
-                <h1 className="heading">Popular Members</h1>
-                <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
-            </div>
-            <div className='flex justify-center items-center'>
-                <div className='flex gap-[24px] mx-auto  items-center mb-[100px] absolute top-[288px]'>
-                    {
-                        cardsData.map((card, index) => <Card key={index} card={card} />)
-                    }
-                </div> F
+        <div className='bg-[#33357D]'>
+            <div className=" mt-[130px]  relative md:h-[625px] md:w-[1172px] mx-auto ">
+                <div className="pt-[54px] text-white px-5">
+                    <h1 className="heading">Popular Members</h1>
+                    <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
+                </div>
+                <div className='flex justify-center items-center mt-5 md:mt-0'>
+                    <div className='md:flex md:space-y-0 space-y-5  gap-[24px] mx-auto  items-center mb-[100px] md:absolute top-[288px]'>
+                        {
+                            cardsData.map((card, index) => <Card key={index} card={card} />)
+                        }
+                    </div> F
+                </div>
             </div>
         </div>
     );

@@ -5,15 +5,15 @@ import star from '../../../../assets/Star 2.png';
 
 const SubscribToday = () => {
     return (
-        <div className="mt-[130px] px-[134px]">
-            <h1 className="heading">Subscribe Today</h1>
-            <p className="subText text-center">Dating is a stage of romantic relationships in which two <br /> individuals engage in an activity together,</p>
+        <div className=" mt-[80px] md:mt-[130px] md:w-[1172px] w-full mx-auto">
+            <h1 className="heading px-5">Subscribe Today</h1>
+            <p className="subText text-center px-5">Dating is a stage of romantic relationships in which two <br /> individuals engage in an activity together,</p>
             <div className="w-[212px] h-[60px] mx-auto mt-[40px] border-[1px] rounded-[30px] border-[#DDD] flex justify-center items-center gap-[15px]">
                 <button className="text-[#FF3D4F]">Monthly</button>
                 <button className="bg-[#FF3D4F] px-[23px] py-[10px] rounded-[30px]"> Yearly</button>
             </div>
             {/* card section div  */}
-            <div className='mt-[35px] flex items-center gap-[156px]'>
+            <div className='mt-[35px] px-10 space-y-10 md:space-y-0 md:flex items-center justify-betwee gap-[322px]'>
                 <div className='flex gap-[56px]'>
                     <div className="w-[275px] h-[] rounded-[50px] bg-[#FFF] pt-[45px] px-[22px] pb-[65px] "
                         style={{

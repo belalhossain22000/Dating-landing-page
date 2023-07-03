@@ -11,7 +11,7 @@ const CircleImage = () => {
     return (
         <div className='flex'>
             {
-                circleimages.map((image, index) => <div key={index} className='ml-[-10px] h-[50px] w-[50px] rouf '>
+                circleimages.map((image, index) => <div key={index} className='md:ml-[-10px] ml-[-20px] h-[50px] w-[50px]  '>
                     <img src={image} alt="" />
                 </div>)
             }

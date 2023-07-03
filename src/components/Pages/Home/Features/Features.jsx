@@ -10,13 +10,15 @@ const Features = () => {
 
 
     return (
-        <div className="mt-[130px] px-[134px]">
-            <h1 className="heading">Our Features</h1>
-            <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
-            <div className='flex items-center gap-[124px] mt-[40px]'>
-                <div className='relative' >
+        <div className="md:mt-[130px] mt-[80px] w-full md:w-[1172px] mx-auto">
+            <div className='px-10'>
+                <h1 className="heading">Our Features</h1>
+                <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
+            </div>
+            <div className='md:flex items-center justify-between gap-[124px] mt-[40px]'>
+                <div className='relative px-5' >
                     <img src={image} alt="" />
-                    <div className='h-[200px] w-[200px] bg-gradient-to-b from-red-500 to-blue-900 shadow-lg rounded-full flex flex-col justify-center items-center absolute top-[200px] right-[-100px] text-white'>
+                    <div className='h-[200px] w-[200px] bg-gradient-to-b from-red-500 to-blue-900 shadow-lg rounded-full flex flex-col justify-center items-center absolute top-[280px] right-[20px] md:top-[200px] md:right-[-100px] text-white'>
                         <p>Start Now For</p>
                         <h4>FREE</h4>
                         <p>7 Day Trail</p>
@@ -25,7 +27,7 @@ const Features = () => {
 
                 {/* text/right side */}
 
-                <div className='space-y-[40px] '>
+                <div className='space-y-[40px] px-5 md:mt-0 mt-14 '>
                     <div className='flex items-center gap-[39px] text-gray-600
                      '>
                         <div className='bg-[#C64EF2] h-[81px] w-[81px] rounded-full flex justify-center items-center'>

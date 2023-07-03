@@ -16,8 +16,8 @@ import image12 from '../../../../assets/Ellipse 47.png';
 
 const SuccessStory = () => {
     return (
-        <div className="mt-[148px] px-[134px] flex items-center gap-[210px] ">
-            <div className="1/2 ">
+        <div className="md:mt-[148px] mt-[50px] w-[1172px] mx-auto md:flex items-center justify-between gap-[210px] ">
+            <div className="1/2 px-10 ">
                 <h1 className="text-[48px] font-bold">Stories of Success <br />
                     are everywhere</h1>
                 <p className="subText mb-[40px] mt-[20px] text-[#5B5B5B]">Dating is a stage of romantic relationships in which <br /> two individuals engage in an activity.</p>
@@ -26,19 +26,19 @@ const SuccessStory = () => {
                 >Read More</button>
             </div>
             {/* right side div for circle images */}
-            <div className="1/2 relative">
+            <div className="1/2 relative px-5 mt-24">
                 {/* big circle image  */}
                 <div className='w-[468px]'>
                     <img src={circle} alt="" />
                 </div>
                 {/* mini circle images */}
-                <div className='absolute top-[173px] right-[173px]'>
+                <div className='absolute md:top-[173px] top-[170px] left-[170px] md:right-[173px]'>
                     <div className='relative flex justify-center items-center h-[136px] w-[136px]'>
                         <img src={image1} alt="" />
                         <img className='absolute top-0 left-0 -z-10' src={image12} alt="" />
                     </div>
                 </div>
-                <div className='absolute top-[124px] left-[-38px]'>
+                <div className='absolute top-[124px] md:left-[-38px] left-[-10px]'>
                     <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
                         <img src={image2} alt="" />
                         <img className='absolute top-0 left-0 -z-10' src={image7} alt="" />

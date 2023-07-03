@@ -1,3 +1,4 @@
+import ClientSlider from "../ClientSlider/ClientSlider";
 import Features from "../Features/Features";
 import Hero from "../Hero/Hero";
 import LatestMemberSlider from "../LatestMemberSlider/LatestMemberSlider";
@@ -14,6 +15,7 @@ const Home = () => {
          <SubscribToday/>
          <LatestMemberSlider/>
          <SuccessStory/>
+         <ClientSlider/>
         </div>
     );
 };

@@ -2,7 +2,7 @@
 import { TbMessage } from 'react-icons/tb';
 import { TfiWorld } from 'react-icons/tfi';
 import image from '../../../../assets/Rectangle 44.png';
-import image2 from '../../../../assets/Rectangle 45.png';
+// import image2 from '../../../../assets/Rectangle 45.png';
 import frame from '../../../../assets/Frame.png';
 
 
@@ -18,11 +18,11 @@ const Features = () => {
             </div>
             <div className='md:flex items-center justify-between gap-[124px] mt-[40px]'>
                 <div className='relative px-5'  >
-                    <div className='md:w-[572px] w-[500px]'>
-                        <img className='w-full' src={image} alt="" />
-                        <img className='absolute top-0 md:w-[572px] w-[500px]' src={image2} alt="" />
+                    <div className='md:w-[572px] w-[500px] '>
+                         <img className='w-full' src={image} alt="" />
+                        {/* <img className='absolute top-0 w-[88%] md:w-full' src={image2} alt="" /> */} 
                     </div>
-                    <div className='h-[200px] w-[200px] bg-gradient-to-b from-red-500 to-blue-900 shadow-lg rounded-full flex flex-col justify-center items-center absolute top-[280px] right-[20px] md:top-[200px] md:right-[-100px] text-white'>
+                    <div className='h-[200px] w-[200px] bg-gradient-to-b from-red-500 to-blue-900 shadow-lg rounded-full flex flex-col justify-center items-center absolute top-[280px] right-[20px] md:top-[200px] md:right-[-90px] text-white'>
                         <p>Start Now For</p>
                         <h4>FREE</h4>
                         <p>7 Day Trail</p>

@@ -64,16 +64,11 @@ const LatestMemberSlider = () => {
         }
     };
 
-    // const responsiveSlidesPerView = {
-    //     // Define the number of slides per view for different screen sizes
-    //     320: 1, // Small devices
-    //     640: 2, // Medium devices
-    //     1024: 4, // Large devices
-    //   };
+    
 
     return (
         <div className="mt-16 w-[1172px] mx-auto">
-            <div>
+            <div className="mr-[55%] md:px-0 px-14 md:mr-0">
                 <h1 className="heading">Latest Register Member</h1>
                 <p className="subText text-center">
                     Dating is a stage of romantic relationships in which two individuals
@@ -92,6 +87,7 @@ const LatestMemberSlider = () => {
                         nextEl: ".swiper-button-next",
                     }}
                     className="mySwiper"
+                   
                 >
                     {
                         slidesData.map((card, index) => (

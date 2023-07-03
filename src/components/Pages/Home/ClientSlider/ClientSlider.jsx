@@ -61,7 +61,7 @@ const ClientSlider = () => {
         <div className="bg-[#FDECEC] ">
             <div className="bg-[#FDECEC] mt-[134px] w-[1172px] mx-auto">
                 {/* heading div/section */}
-                <div>
+                <div className="mr-[55%] md:mr-0 md:px-0 px-14">
                     <h1 className="heading pt-[92px] mb-[20px]">Clint Say’s</h1>
                     <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
                 </div>

@@ -80,8 +80,8 @@ const Navbar = () => {
 
                     {/* Mobile navigation */}
                     {isMenuOpen && (
-                        <div className="md:hidden h-[100vh] bg-red-500">
-                            <div className="px-2 pt-2 pb-3 sm:px-3 bg-red-500">
+                        <div className="text-white md:hidden h-[100vh]  absolute z-10 w-full top-28"  style={{ backgroundColor: "rgba(239, 68, 68, 0.5)" }}>
+                            <div className="px-2 pt-2 pb-3 sm:px-3 ">
                                 <a
                                     href="#"
                                     className="hover:text-orange-500  block px-3 py-2 rounded-md text-base font-medium"
@@ -108,16 +108,16 @@ const Navbar = () => {
                                 </a>
                             </div>
                             {/* button  */}
-                            <div className="px-2 pt-2 pb-3 sm:px-3 flex justify-end">
-                                <button className=" hover:text-orange-500 text-[20px] text-[#676767]  px-3 py-2 rounded-md text-sm font-medium">
+                            <div className="px-2 pt-2 pb-3 sm:px-3 flex ">
+                                <button className=" hover:text-orange-500 text-[20px] text-white px-3 py-2 rounded-md text-sm font-medium">
                                     Login
                                 </button>
-                                <button className="flex items-center gap-[9px] text-[15px] rounded-[30px] bg-[#FF3D4F] px-[32px] py-[22px] ">
+                                <button className="flex items-center gap-[9px] text-[15px] rounded-[30px]  px-[32px] py-[22px] hover:text-orange-500">
 
                                     <img className='h-4 w-4' src={icon} alt="" />
                                     Sign Up
                                 </button>
-                                F
+                                
                             </div>
                         </div>
                     )}

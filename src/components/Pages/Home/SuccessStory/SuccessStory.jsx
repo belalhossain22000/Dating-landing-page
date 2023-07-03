@@ -44,7 +44,7 @@ const SuccessStory = () => {
                         <img className='absolute top-0 left-0 -z-10' src={image7} alt="" />
                     </div>
                 </div>
-                <div className='absolute top-[124px] right-[-38px]'>
+                <div className='absolute top-[124px] right-[57%] md:right-[-38px]'>
                     <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
                         <img src={image3} alt="" />
                         <img className='absolute top-0 left-0 -z-10' src={image9} alt="" />
@@ -62,7 +62,7 @@ const SuccessStory = () => {
                         <img className='absolute top-0 left-0 -z-10' src={image11} alt="" />
                     </div>
                 </div>
-                <div className='right-[54px] bottom-0 absolute'>
+                <div className='md:right-[54px] right-[63%] bottom-0 absolute'>
                     <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
                         <img src={image6} alt="" />
                         <img className='absolute top-0 left-0 -z-10' src={image10} alt="" />

@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { FaHeart,FaBars  } from 'react-icons/fa';
+import { FaHeart, FaBars } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,14 +10,14 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="">
+        <nav className=" px-[134px]">
             <div className="w-full mx-auto   pt-[56px] text-[20px]">
                 <div className="flex items-center justify-between ">
                     {/* Logo */}
-                    <div className="flex-shrink-0 flex items-center gap-[10px] text-[18px] font-bold">
-                        <FaHeart className='text-red-500 '/>
+                    <Link to='/'> <div className="flex-shrink-0 flex items-center gap-[10px] text-[18px] font-bold">
+                        <FaHeart className='text-red-500 ' />
                         <h1> Lovelli</h1>
-                    </div>
+                    </div></Link>
 
                     {/* Mobile menu button */}
                     <div className="flex md:hidden">
@@ -25,12 +26,12 @@ const Navbar = () => {
                             onClick={toggleMenu}
                             className="inline-flex items-center justify-center p-2 rounded-md text-gray-400  hover:text-orange-500 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
                         >
-                            {isMenuOpen ? 'x' : <FaBars/>}
+                            {isMenuOpen ? 'x' : <FaBars />}
                         </button>
                     </div>
 
                     {/* Desktop navigation */}
-                    <div className="hidden md:flex items-center">
+                    <div className="hidden md:flex items-center ">
                         <div className="ml-[293px] flex items-baseline space-x-[50px] text-[20px] font-normal  ">
                             <a
                                 href="#"

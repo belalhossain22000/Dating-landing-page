@@ -4,7 +4,7 @@ import CircleImage from './CircleImage';
 
 const Hero = () => {
     return (
-        <div className="md:flex  items-center gap-[41px] mt-[46px] relative">
+        <div className="md:flex  items-center gap-[41px] mt-[46px] relative px-[134px]">
             <div className="md:w-1/2 w-full p-4 md:p-0 ">
                 <h1 className="heading"><span className='text-[#FF3D4F]'>Special</span> People <br />
                     Around You</h1>
@@ -30,7 +30,7 @@ const Hero = () => {
                 <img className='md:w-[564px] md:h-[606px] ' src={frameImage} alt="" />
 
 
-                <div className='absolute right-[-20px] bottom-4 bg-[#fff] px-[11px] py-[10px]' style={{
+                <div className='absolute right-[8%] bottom-4 bg-[#fff] px-[11px] py-[10px]' style={{
                     borderRadius: '60px',
                     background: '#FFF',
                     boxShadow: '0px 20px 50px 0px rgba(76, 9, 144, 0.20)',

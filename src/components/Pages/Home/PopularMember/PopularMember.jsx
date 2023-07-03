@@ -32,10 +32,12 @@ const PopularMember = () => {
                 <h1 className="heading">Popular Members</h1>
                 <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
             </div>
-            <div className='flex gap-[24px] mx-auto justify-center items-center mb-[100px] absolute top-[288px]'>
-                {
-                    cardsData.map((card, index) => <Card key={index} card={card} />)
-                }
+            <div className='flex justify-center items-center'>
+                <div className='flex gap-[24px] mx-auto  items-center mb-[100px] absolute top-[288px]'>
+                    {
+                        cardsData.map((card, index) => <Card key={index} card={card} />)
+                    }
+                </div> F
             </div>
         </div>
     );

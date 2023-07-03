@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaHeart, FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import icon from '../../../../assets/Frame.png';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,9 +11,9 @@ const Navbar = () => {
     };
 
     return (
-        <nav className=" px-[134px]">
+        <nav className=" px-[134px] ">
             <div className="w-full mx-auto   pt-[56px] text-[20px]">
-                <div className="flex items-center justify-between ">
+                <div className="flex items-center">
                     {/* Logo */}
                     <Link to='/'> <div className="flex-shrink-0 flex items-center gap-[10px] text-[18px] font-bold">
                         <FaHeart className='text-red-500 ' />
@@ -31,7 +32,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop navigation */}
-                    <div className="hidden md:flex items-center ">
+                    <div className="hidden md:flex items-center text-[#676767] text-[20px]  ">
                         <div className="ml-[293px] flex items-baseline space-x-[50px] text-[20px] font-normal  ">
                             <a
                                 href="#"
@@ -61,11 +62,13 @@ const Navbar = () => {
                     </div>
 
                     {/* Right side buttons */}
-                    <div className="hidden ml-[118px] md:flex items-center ">
-                        <button className=" hover:text-orange-500  px-3 py-2 rounded-md text-sm font-medium">
+                    <div className="hidden ml-[180px] md:flex items-center ">
+                        <button className=" hover:text-orange-500 text-[20px] text-[#676767]  px-3 py-2 rounded-md text-sm font-medium">
                             Login
                         </button>
-                        <button className=" ">
+                        <button className="flex items-center gap-[9px] text-[15px] rounded-[30px] bg-[#FF3D4F] px-[32px] py-[22px] ">
+
+                            <img className='h-4 w-4' src={icon} alt="" />
                             Sign Up
                         </button>
 

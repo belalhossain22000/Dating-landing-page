@@ -13,8 +13,8 @@ const SubscribToday = () => {
                 <button className="bg-[#FF3D4F] px-[23px] py-[10px] rounded-[30px]"> Yearly</button>
             </div>
             {/* card section div  */}
-            <div className='mt-[35px] px-10 space-y-10 md:space-y-0 md:flex items-center justify-betwee gap-[322px]'>
-                <div className='flex gap-[56px]'>
+            <div className='mt-[35px] px-10 space-y-10 md:space-y-0 md:flex items-center justify-between gap-[322px]'>
+                <div className='flex flex-col-reverse md:flex-row justify-center items-center md:items-start gap-5 md:gap-[56px]'>
                     <div className="w-[275px] h-[] rounded-[50px] bg-[#FFF] pt-[45px] px-[22px] pb-[65px] "
                         style={{
                             borderRadius: '30px',
@@ -32,14 +32,14 @@ const SubscribToday = () => {
                     </div>
                     <div className='text-white relative'>
                         <img className='h-[110px] w-[110px]' src={star} alt="" />
-                        <div className='absolute top-6 right-7'>
+                        <div className='absolute top-6 right-6 md:top-6 md:right-6'>
                             <h2 className='text-[24px] font-bold'>$70</h2>
                             <p className='text-[14px] font-normal'>Monthly</p>
                         </div>
 
                     </div>
                 </div>
-                <div className='flex gap-[56px]'>
+                <div className='flex md:gap-[56px] justify-center -ml-8 md:ml-0 '>
                     <div className="w-[275px] h-[] rounded-[50px] bg-[#FFF] pt-[45px] px-[22px] pb-[65px] "
                         style={{
                             borderRadius: '30px',
@@ -55,7 +55,7 @@ const SubscribToday = () => {
                         </ul>
                         <button className="px-[32px] py-[20px]  rounded-[30px] bg-red-500">Subscribe Now</button>
                     </div>
-                    <div className=' '>
+                    <div className='ml-[-80px] md:ml-0 '>
                        
                         <div className=''>
                             <h2 className='text-[24px] font-bold'>$90</h2>

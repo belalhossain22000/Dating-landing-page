@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { FaBars, FaHeart } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { HiX } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import icon from '../../../../assets/Frame.png';
+import icon2 from '../../../../assets/Frame (2).png';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <Link to='/'> <div className="flex-shrink-0 flex items-center gap-[10px] text-[18px] font-bold">
-                        <FaHeart className='text-red-500 ' />
+                        <img className='h-[19px] w-15px' src={icon2} alt="" />
                         <h1> Lovelli</h1>
                     </div></Link>
 
@@ -59,7 +60,7 @@ const Navbar = () => {
                                 Contact
                             </a>
 
-                            
+
 
 
                         </div>
@@ -80,7 +81,7 @@ const Navbar = () => {
 
                     {/* Mobile navigation */}
                     {isMenuOpen && (
-                        <div className="text-white md:hidden h-[100vh]  absolute z-10 w-full top-28"  style={{ backgroundColor: "rgba(239, 68, 68, 0.5)" }}>
+                        <div className="text-white md:hidden h-[100vh]  absolute z-10 w-full top-28" style={{ backgroundColor: "rgba(239, 68, 68, 0.5)" }}>
                             <div className="px-2 pt-2 pb-3 sm:px-3 ">
                                 <a
                                     href="#"
@@ -117,7 +118,7 @@ const Navbar = () => {
                                     <img className='h-4 w-4' src={icon} alt="" />
                                     Sign Up
                                 </button>
-                                
+
                             </div>
                         </div>
                     )}

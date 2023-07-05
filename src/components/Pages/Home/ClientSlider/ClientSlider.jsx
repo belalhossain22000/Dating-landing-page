@@ -77,7 +77,7 @@ const ClientSlider = () => {
                         }
                     </Swiper>
                 </div>
-                <div className="mt-[40px] pb-[150px] md:hidden w-[374px] mx-auto h-[372px]">
+                <div className="mt-[40px] pb-[180px] px-5 md:hidden w-[374px] mx-auto h-[372px]">
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={30}

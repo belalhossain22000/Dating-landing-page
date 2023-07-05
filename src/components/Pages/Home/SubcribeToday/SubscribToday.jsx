@@ -1,20 +1,41 @@
 
 
+import { useState } from 'react';
 import star from '../../../../assets/Star 2.png';
+import { HiX } from 'react-icons/hi';
 
 
 const SubscribToday = () => {
+
+     const [active, setActive] = useState(false);
+
+    const handleActiveBtn = () => {
+        setActive(!active);
+    };
+
     return (
         <div className=" mt-[80px] md:mt-[130px] md:w-[1172px] w-full mx-auto">
             <h1 className="heading px-5">Subscribe Today</h1>
             <p className="subText text-center px-5">Dating is a stage of romantic relationships in which two <br /> individuals engage in an activity together,</p>
             <div className="w-[212px] h-[60px] mx-auto mt-[40px] border-[1px] rounded-[30px] border-[#DDD] flex justify-center items-center gap-[15px]">
-                <button className="text-[#FF3D4F]">Monthly</button>
-                <button className="bg-[#FF3D4F] px-[23px] py-[10px] rounded-[30px]"> Yearly</button>
+
+                <button
+                    className={`${!active ? 'bg-[#FF3D4F] text-white px-[23px] py-[10px] rounded-[30px] ' : 'text-[#FF3D4F]'}`}
+                    onClick={handleActiveBtn}
+                >
+                    Monthly
+                </button>
+                <button
+                    className={`${active ? 'bg-[#FF3D4F] px-[23px] py-[10px] rounded-[30px] text-white' : 'text-[#FF3D4F]'}`}
+                    onClick={handleActiveBtn}
+                >
+                    Yearly
+                </button>
+
             </div>
             {/* card section div  */}
             <div className='mt-[35px] px-10 space-y-10 md:space-y-0 md:flex items-center justify-between gap-[322px]'>
-                <div className='flex flex-col-reverse md:flex-row justify-center items-center md:items-start gap-5 md:gap-[56px]'>
+                <div className={`flex flex-col-reverse md:flex-row justify-center items-center md:items-start gap-5 md:gap-[56px] ${active?"hidden":""}`} >
                     <div className="w-[275px] h-[] rounded-[50px] bg-[#FFF] pt-[45px] px-[22px] pb-[65px] "
                         style={{
                             borderRadius: '30px',
@@ -39,7 +60,7 @@ const SubscribToday = () => {
 
                     </div>
                 </div>
-                <div className='flex md:gap-[56px] justify-center -ml-8 md:ml-0 '>
+                <div className={`flex md:gap-[56px] justify-center -ml-8 md:ml-0 ${!active?"hidden":""}`}>
                     <div className="w-[275px] h-[] rounded-[50px] bg-[#FFF] pt-[45px] px-[22px] pb-[65px] "
                         style={{
                             borderRadius: '30px',
@@ -51,12 +72,12 @@ const SubscribToday = () => {
                         <ul className="list-disc subText text-[#5B5B5B] my-[20px] space-y-[10px]">
                             <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" >&#x2713;</span>Single User</li>
                             <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" >&#x2713;</span>Single User</li>
-                            <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" >&#x2713;</span>Single User</li>
+                            <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#ED3E3E] p-1  rounded-full" > <HiX/> </span>Multi users full access</li>
                         </ul>
                         <button className="px-[32px] py-[20px]  rounded-[30px] bg-red-500">Subscribe Now</button>
                     </div>
                     <div className='ml-[-80px] md:ml-0 '>
-                       
+
                         <div className=''>
                             <h2 className='text-[24px] font-bold'>$90</h2>
                             <p className='text-[14px] font-normal text-[#5B5B5B]'>Yearly</p>

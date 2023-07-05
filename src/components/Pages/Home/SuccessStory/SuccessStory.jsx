@@ -28,23 +28,23 @@ const SuccessStory = () => {
             {/* right side div for circle images */}
             <div className="1/2 relative px-5 mt-24">
                 {/* big circle image  */}
-                <div className='w-[468px]'>
+                <div className='md:w-[468px] w-[300px] ml-[3%]'>
                     <img src={circle} alt="" />
                 </div>
                 {/* mini circle images */}
-                <div className='absolute md:top-[173px] top-[170px] left-[170px] md:right-[173px]'>
+                <div className='absolute md:top-[173px]  md:right-[173px] top-[80px] right-[76.5%]'>
                     <div className='relative flex justify-center items-center h-[136px] w-[136px]'>
                         <img src={image1} alt="" />
                         <img className='absolute top-0 left-0 -z-10' src={image12} alt="" />
                     </div>
                 </div>
-                <div className='absolute top-[124px] md:left-[-38px] left-[-10px]'>
+                <div className='absolute top-[70px] md:left-[8px] left-[-px]'>
                     <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
                         <img src={image2} alt="" />
                         <img className='absolute top-0 left-0 -z-10' src={image7} alt="" />
                     </div>
                 </div>
-                <div className='absolute top-[124px] right-[57%] md:right-[-38px]'>
+                <div className='absolute top-[70px] right-[66%] md:right-[-18px]'>
                     <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
                         <img src={image3} alt="" />
                         <img className='absolute top-0 left-0 -z-10' src={image9} alt="" />
@@ -62,7 +62,7 @@ const SuccessStory = () => {
                         <img className='absolute top-0 left-0 -z-10' src={image11} alt="" />
                     </div>
                 </div>
-                <div className='md:right-[54px] right-[63%] bottom-0 absolute'>
+                <div className='md:right-[54px] right-[70%] bottom-0 absolute'>
                     <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
                         <img src={image6} alt="" />
                         <img className='absolute top-0 left-0 -z-10' src={image10} alt="" />

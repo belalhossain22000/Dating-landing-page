@@ -30,7 +30,7 @@ const Hero = () => {
                 <img className='md:w-[564px] md:h-[606px] ' src={frameImage} alt="" />
 
 
-                <div className='absolute right-[-5%] md:right-[0%] bottom-4 bg-[#fff] px-[11px] py-[10px]' style={{
+                <div className='absolute right-[-0%] md:right-[0%] bottom-4 bg-[#fff] pl-12 pt-5 md:px-[11px] md:py-[10px]' style={{
                     borderRadius: '60px',
                     background: '#FFF',
                     boxShadow: '0px 20px 50px 0px rgba(76, 9, 144, 0.20)',

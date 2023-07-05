@@ -35,30 +35,30 @@ const Navbar = () => {
                     {/* Desktop navigation */}
                     <div className="hidden md:flex items-center text-[#676767] text-[20px]  ">
                         <div className="ml-[293px] flex items-baseline space-x-[50px] text-[20px] font-normal  ">
-                            <a
-                                href="#"
+                            <Link
+                               to="#"
                                 className="hover:text-orange-500  px-3 py-2 rounded-md text-sm font-medium"
                             >
                                 Home
-                            </a>
-                            <a
-                                href="#"
+                            </Link>
+                            <Link
+                               to="#"
                                 className="hover:text-orange-500  px-3 py-2 rounded-md text-sm font-medium"
                             >
                                 About
-                            </a>
-                            <a
-                                href="#"
+                            </Link>
+                            <Link
+                               to="#"
                                 className="hover:text-orange-500  px-3 py-2 rounded-md text-sm font-medium"
                             >
                                 Services
-                            </a>
-                            <a
-                                href="#"
+                            </Link>
+                            <Link
+                               to="#"
                                 className="hover:text-orange-500  px-3 py-2 rounded-md text-sm font-medium"
                             >
                                 Contact
-                            </a>
+                            </Link>
 
 
 
@@ -68,14 +68,19 @@ const Navbar = () => {
 
                     {/* Right side buttons */}
                     <div className="hidden ml-[118px] md:flex items-center  ">
-                        <button className=" hover:text-orange-500 text-[20px] text-[#676767]  px-3 py-2 rounded-md text-sm font-medium">
-                            Login
-                        </button>
-                        <button className="flex items-center gap-[9px] text-[15px] rounded-[30px] bg-[#FF3D4F] px-[32px] py-[22px] ">
+                        <Link>
+                            <button className=" hover:text-orange-500 text-[20px] text-[#676767]  px-3 py-2 rounded-md text-sm font-medium">
+                                Login
+                            </button>
+                        </Link>
+                        <Link>
+                            <button className="flex items-center gap-[9px] text-[15px] rounded-[30px] bg-[#FF3D4F] px-[32px] py-[22px] text-white
+                        hover:bg-white border-1 border hover:border-[#FF3D4F] hover:text-[#FF3D4F] ">
 
-                            <img className='h-4 w-4' src={icon} alt="" />
-                            Sign Up
-                        </button>
+                                <img className='h-4 w-4  bg-[#FF3D4F]' src={icon} alt="" />
+                                Sign Up
+                            </button>
+                        </Link>
 
                     </div>
 
@@ -83,30 +88,30 @@ const Navbar = () => {
                     {isMenuOpen && (
                         <div className="text-white md:hidden h-[100vh]  absolute z-10 w-full top-28" style={{ backgroundColor: "rgba(239, 68, 68, 0.5)" }}>
                             <div className="px-2 pt-2 pb-3 sm:px-3 ">
-                                <a
-                                    href="#"
+                                <Link
+                                   to="#"
                                     className="hover:text-orange-500  block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     Home
-                                </a>
-                                <a
-                                    href="#"
+                                </Link>
+                                <Link
+                                   to="#"
                                     className="hover:text-orange-500  block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     About
-                                </a>
-                                <a
-                                    href="#"
+                                </Link>
+                                <Link
+                                   to="#"
                                     className="hover:text-orange-500  block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     Services
-                                </a>
-                                <a
-                                    href="#"
+                                </Link>
+                                <Link
+                                   to="#"
                                     className="hover:text-orange-500  block px-3 py-2 rounded-md text-base font-medium"
                                 >
                                     Contact
-                                </a>
+                                </Link>
                             </div>
                             {/* button  */}
                             <div className="px-2 pt-2 pb-3 sm:px-3 flex ">

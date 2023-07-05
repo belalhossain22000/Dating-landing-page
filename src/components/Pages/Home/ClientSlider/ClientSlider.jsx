@@ -1,17 +1,8 @@
-
-//swiper import
-// import { useRef } from "react";
+// import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
-
 import "swiper/css";
-import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-
-SwiperCore.use([Navigation]);
-
+import { Pagination } from "swiper";
 
 //image import
 import image1 from '../../../../assets/Group 820.png';
@@ -59,24 +50,44 @@ const slidesData = [
 const ClientSlider = () => {
     return (
         <div className="bg-[#FDECEC] ">
-            <div className="bg-[#FDECEC] mt-[134px] w-[1172px] mx-auto">
+            <div className="bg-[#FDECEC] mt-[134px] md:w-[1172px] mx-auto">
                 {/* heading div/section */}
-                <div className="mr-[55%] md:mr-0 md:px-0 px-14">
+                <div className="px-5">
                     <h1 className="heading pt-[92px] mb-[20px]">Clint Say’s</h1>
                     <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
                 </div>
 
                 {/* slider section  */}
-                <div className="mt-[40px] pb-[150px]">
+                <div className="mt-[40px] pb-[150px] hidden sm:block">
                     <Swiper
                         slidesPerView={3}
-                        spaceBetween={24}
-                        freeMode={true}
+                        spaceBetween={30}
                         pagination={{
-                            clickable: true,
+                          clickable: true,
+                          style: { background: '#ED3E3E' },
                         }}
-
+                        modules={[Pagination]}
                         className="mySwiper"
+                        
+                    >
+                        {
+                            slidesData.map((slide, index) => <SwiperSlide key={index}>
+                                <ClientCard slide={slide}></ClientCard>
+                            </SwiperSlide>)
+                        }
+                    </Swiper>
+                </div>
+                <div className="mt-[40px] pb-[150px] md:hidden w-[374px] mx-auto h-[372px]">
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        pagination={{
+                          clickable: true,
+                          style: { background: '#ED3E3E' },
+                        }}
+                        modules={[Pagination]}
+                        className="mySwiper"
+                        
                     >
                         {
                             slidesData.map((slide, index) => <SwiperSlide key={index}>

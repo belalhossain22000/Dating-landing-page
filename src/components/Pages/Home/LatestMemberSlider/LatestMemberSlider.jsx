@@ -1,4 +1,4 @@
-import  { useRef } from "react";
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 
@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 SwiperCore.use([Navigation]);
 
 //icon import
-import { BiLeftArrowAlt,BiRightArrowAlt } from 'react-icons/bi';
+import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 
 //image import for slide
 import image1 from '../../../../assets/Rectangle 60.png'
@@ -64,11 +64,11 @@ const LatestMemberSlider = () => {
         }
     };
 
-    
+
 
     return (
-        <div className="mt-16 w-[1172px] mx-auto">
-            <div className="mr-[55%] md:px-0 px-14 md:mr-0">
+        <div className="mt-16 md:w-[1172px] mx-auto">
+            <div className="px-5">
                 <h1 className="heading">Latest Register Member</h1>
                 <p className="subText text-center">
                     Dating is a stage of romantic relationships in which two individuals
@@ -76,7 +76,7 @@ const LatestMemberSlider = () => {
                     engage in an activity together, most often with the intention.
                 </p>
             </div>
-            <div className="relative mt-[30px]">
+            <div className="relative mt-[30px] hidden sm:block">
                 <Swiper
                     ref={swiperRef}
                     slidesPerView={4}
@@ -86,24 +86,24 @@ const LatestMemberSlider = () => {
                         prevEl: ".swiper-button-prev",
                         nextEl: ".swiper-button-next",
                     }}
-                    className="mySwiper"
-                   
+                    className="mySwiper "
+
                 >
                     {
                         slidesData.map((card, index) => (
                             <SwiperSlide key={index}>
-                              <Card card={card}/>
+                                <Card card={card} />
                             </SwiperSlide>
                         ))
                     }
-                    
+
                 </Swiper>
                 <div className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 z-10">
                     <div
                         className="w-10 h-10flex items-center justify-center rounded-full cursor-pointer"
                         onClick={goPrev}
                     >
-                       <BiLeftArrowAlt className="text-[24px]"/>
+                        <BiLeftArrowAlt className="text-[24px]" />
                     </div>
                 </div>
                 <div className="absolute right-[-50px] top-1/2 transform -translate-y-1/2  z-10">
@@ -111,7 +111,46 @@ const LatestMemberSlider = () => {
                         className="w-10 h-10flex items-center justify-center rounded-full cursor-pointer"
                         onClick={goNext}
                     >
-                       <BiRightArrowAlt className="text-[24px]"/>
+                        <BiRightArrowAlt className="text-[24px]" />
+                    </div>
+                </div>
+            </div>
+            <div className="relative mt-[30px] md:hidden w-[275px] mx-auto ">
+                <Swiper
+                    ref={swiperRef}
+                    slidesPerView={1}
+                    spaceBetween={24}
+                    freeMode={true}
+                    navigation={{
+                        prevEl: ".swiper-button-prev",
+                        nextEl: ".swiper-button-next",
+                    }}
+                    className="mySwiper "
+
+                >
+                    {
+                        slidesData.map((card, index) => (
+                            <SwiperSlide key={index}>
+                                <Card card={card} />
+                            </SwiperSlide>
+                        ))
+                    }
+
+                </Swiper>
+                <div className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 z-10">
+                    <div
+                        className="w-10 h-10flex items-center justify-center rounded-full cursor-pointer"
+                        onClick={goPrev}
+                    >
+                        <BiLeftArrowAlt className="text-[24px]" />
+                    </div>
+                </div>
+                <div className="absolute right-[-50px] top-1/2 transform -translate-y-1/2  z-10">
+                    <div
+                        className="w-10 h-10flex items-center justify-center rounded-full cursor-pointer"
+                        onClick={goNext}
+                    >
+                        <BiRightArrowAlt className="text-[24px]" />
                     </div>
                 </div>
             </div>

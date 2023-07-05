@@ -9,7 +9,7 @@ const circleimages = [image1, image2, image3, image4, image5, image6];
 
 const CircleImage = () => {
     return (
-        <div className='flex'>
+        <div className='flex justify-center  items-center ml-[10px]'>
             {
                 circleimages.map((image, index) => <div key={index} className='md:ml-[-10px] ml-[-20px] h-[50px] w-[50px]  '>
                     <img src={image} alt="" />

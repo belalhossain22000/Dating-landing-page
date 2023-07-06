@@ -23,7 +23,7 @@ const Features = () => {
     }, []);
 
     return (
-        <div className="md:mt-[130px] mt-[80px] w-full md:w-[1172px] mx-auto">
+        <div className="md:mt-[130px] mt-[80px] w-full md:w-[1280px] mx-auto">
             <div className='px-10'>
                 <h1 className="heading text-center">Our Features</h1>
                 <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>

@@ -4,7 +4,7 @@ import CircleImage from './CircleImage';
 
 const Hero = () => {
     return (
-        <div className="md:flex  items-center gap-[41px] mt-[46px] relative md:w-[1172px] w-full mx-auto">
+        <div className="md:flex justify-between gap-[41px] items-center mt-[46px] relative md:w-[1280px] w-full mx-auto">
             <div className="md:w-1/2 w-full p-4 md:p-0 ">
                 <h1 className="heading text-left "><span className='text-[#FF3D4F]'>Special</span> People <br />
                     Around You</h1>

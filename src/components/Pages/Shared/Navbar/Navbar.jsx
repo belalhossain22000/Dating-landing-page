@@ -75,9 +75,9 @@ const Navbar = () => {
                         </Link>
                         <Link>
                             <button className="flex items-center justify-center gap-[9px] text-[15px] rounded-[30px] bg-[#FF3D4F]  text-white
-                        hover:bg-white border-1 border hover:border-[#FF3D4F] hover:text-[#FF3D4F] w-[160px] h-[60px]  ">
+                        hover:bg-white border-1 text-xl border hover:border-[#FF3D4F] hover:text-[#FF3D4F] w-[160px] h-[60px]  ">
 
-                                <img className='h-4 w-4  bg-[#FF3D4F]' src={icon} alt="" />
+                                <img className='h-5 w-5  bg-[#FF3D4F]' src={icon} alt="" />
                                 Sign Up
                             </button>
                         </Link>

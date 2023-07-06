@@ -18,7 +18,7 @@ const SubscribToday = () => {
         <div className=" mt-[80px] md:mt-[130px] md:w-[1172px] w-full mx-auto">
             <h1 className="heading px-5 text-center">Subscribe Today</h1>
             <p className="subText text-center px-5">Dating is a stage of romantic relationships in which two <br /> individuals engage in an activity together,</p>
-            <div className="w-[212px] h-[60px] mx-auto mt-[40px] border-[1px] rounded-[30px] border-[#DDD] flex justify-center items-center gap-[15px]">
+            <div className="w-[190px] h-[60px] mx-auto mt-[40px] border-[1px] rounded-[30px] border-[#DDD] flex justify-center items-center gap-[15px]">
 
                 <button
                     className={`${!active ? 'bg-[#FF3D4F] text-white px-[23px] py-[10px] rounded-[30px] ' : 'text-[#FF3D4F]'}`}

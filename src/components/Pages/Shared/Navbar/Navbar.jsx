@@ -14,12 +14,12 @@ const Navbar = () => {
 
     return (
         <nav className="  ">
-            <div className="w-full px-5 md:mx-auto md:w-[1172px]  pt-[56px] text-[20px]">
+            <div className="w-full px-5 md:mx-auto md:w-[1280px]  pt-[56px] text-[20px]">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <Link to='/'> <div className="flex-shrink-0 flex items-center gap-[10px] text-[18px] font-bold">
-                        <img className='h-[19px] w-15px' src={icon2} alt="" />
-                        <h1> Lovelli</h1>
+                        <img className='h-[19px] w-15px ' src={icon2} alt="" />
+                        <h1 className='text-lg text-[#5B5B5B]'> Lovelli</h1>
                     </div></Link>
 
                     {/* Mobile menu button */}
@@ -33,29 +33,29 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop navigation */}
-                    <div className="hidden md:flex items-center text-[#676767] text-[20px]  ">
-                        <div className="ml-[293px] flex items-baseline space-x-[50px] text-[20px] font-normal  ">
+                    <div className="hidden md:flex items-center text-[#676767]   ">
+                        <div className="ml-[293px] flex items-baseline gap-[50px] text-[20px] font-normal  ">
                             <Link
                                to="#"
-                                className="hover:text-orange-500  px-3 py-2 rounded-md text-sm font-medium"
+                                className="hover:text-orange-500  px-3 py-2 rounded-md text-xl font-medium "
                             >
                                 Home
                             </Link>
                             <Link
                                to="#"
-                                className="hover:text-orange-500  px-3 py-2 rounded-md text-sm font-medium"
+                                className="hover:text-orange-500  px-3 py-2 rounded-md text-xl font-medium"
                             >
                                 About
                             </Link>
                             <Link
                                to="#"
-                                className="hover:text-orange-500  px-3 py-2 rounded-md text-sm font-medium"
+                                className="hover:text-orange-500  px-3 py-2 rounded-md text-xl font-medium"
                             >
                                 Services
                             </Link>
                             <Link
                                to="#"
-                                className="hover:text-orange-500  px-3 py-2 rounded-md text-sm font-medium"
+                                className="hover:text-orange-500  px-3 py-2 rounded-md text-xl font-medium"
                             >
                                 Contact
                             </Link>
@@ -67,15 +67,15 @@ const Navbar = () => {
                     </div>
 
                     {/* Right side buttons */}
-                    <div className="hidden ml-[118px] md:flex items-center  ">
+                    <div className="hidden md:ml-[118px] md:flex items-center  gap-[50px] ">
                         <Link>
-                            <button className=" hover:text-orange-500 text-[20px] text-[#676767]  px-3 py-2 rounded-md text-sm font-medium">
+                            <button className=" hover:text-orange-500  text-[#676767] text-xl  px-3 py-2 rounded-md font-medium">
                                 Login
                             </button>
                         </Link>
                         <Link>
-                            <button className="flex items-center gap-[9px] text-[15px] rounded-[30px] bg-[#FF3D4F] px-[32px] py-[22px] text-white
-                        hover:bg-white border-1 border hover:border-[#FF3D4F] hover:text-[#FF3D4F] ">
+                            <button className="flex items-center justify-center gap-[9px] text-[15px] rounded-[30px] bg-[#FF3D4F]  text-white
+                        hover:bg-white border-1 border hover:border-[#FF3D4F] hover:text-[#FF3D4F] w-[160px] h-[60px]  ">
 
                                 <img className='h-4 w-4  bg-[#FF3D4F]' src={icon} alt="" />
                                 Sign Up
@@ -115,7 +115,7 @@ const Navbar = () => {
                             </div>
                             {/* button  */}
                             <div className="px-2 pt-2 pb-3 sm:px-3 flex ">
-                                <button className=" hover:text-orange-500 text-[20px] text-white px-3 py-2 rounded-md text-sm font-medium">
+                                <button className=" hover:text-orange-500 text-[20px] text-white px-3 py-2 rounded-md text-xl font-medium">
                                     Login
                                 </button>
                                 <button className="flex items-center gap-[9px] text-[15px] rounded-[30px]  px-[32px] py-[22px] hover:text-orange-500">

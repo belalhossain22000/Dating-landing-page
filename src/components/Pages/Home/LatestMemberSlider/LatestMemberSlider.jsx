@@ -69,7 +69,7 @@ const LatestMemberSlider = () => {
     return (
         <div className="mt-16 md:w-[1172px] mx-auto">
             <div className="px-5">
-                <h1 className="heading">Latest Register Member</h1>
+                <h1 className="heading text-center mb-5">Latest Register Member</h1>
                 <p className="subText text-center">
                     Dating is a stage of romantic relationships in which two individuals
                     <br />
@@ -128,13 +128,15 @@ const LatestMemberSlider = () => {
                     className="mySwiper "
 
                 >
-                    {
-                        slidesData.map((card, index) => (
-                            <SwiperSlide key={index}>
-                                <Card card={card} />
-                            </SwiperSlide>
-                        ))
-                    }
+                    <div className="h-[300px]">
+                        {
+                            slidesData.map((card, index) => (
+                                <SwiperSlide key={index}>
+                                    <Card card={card} />
+                                </SwiperSlide>
+                            ))
+                        }
+                    </div>
 
                 </Swiper>
                 <div className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 z-10">

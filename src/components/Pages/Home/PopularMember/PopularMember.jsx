@@ -37,7 +37,7 @@ const PopularMember = () => {
         <div className='bg-[#33357D]'>
             <div className=" mt-[130px]  relative md:h-[625px] md:w-[1172px] mx-auto ">
                 <div className="pt-[54px] text-white px-5">
-                    <h1 className="heading">Popular Members</h1>
+                    <h1 className="heading text-center mb-[20px]">Popular Members</h1>
                     <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
                 </div>
                 <div className='flex justify-center items-center mt-5 md:mt-0'>

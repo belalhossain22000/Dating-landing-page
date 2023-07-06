@@ -21,7 +21,7 @@ const SuccessStory = () => {
                 <h1 className="text-[48px] font-bold">Stories of Success <br />
                     are everywhere</h1>
                 <p className="subText mb-[40px] mt-[20px] text-[#5B5B5B]">Dating is a stage of romantic relationships in which <br /> two individuals engage in an activity.</p>
-                <button className="bg-[#FF3D4F] text-[20px] font-normal px-[32px] py-[20px] rounded-[30px]"
+                <button className="bg-[#FF3D4F] text-white text-[20px] font-normal px-[32px] py-[20px] rounded-[30px]"
                     style={{ boxShadow: "0px 20px 40px 0px rgba(237, 62, 62, 0.20)" }}
                 >Read More</button>
             </div>

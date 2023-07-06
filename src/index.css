@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .heading {
-    @apply text-center md:text-[82px] text-[50px] font-bold  ;
+    @apply  md:text-[82px] text-[50px] font-bold  ;
   }
 
   .subText{

@@ -1,0 +1,12 @@
+/* Custom active dot color */
+.swiper-pagination-bullet-active-custom {
+    background-color: #ED3E3E;
+  }
+  
+  /* Custom position */
+  .mySwiper .swiper-pagination {
+    position: absolute;
+    z-index: 100;
+    bottom: '';
+  }
+  

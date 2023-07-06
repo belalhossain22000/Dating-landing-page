@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* src/styles/main.css */
-
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&display=swap');
-
-
-/* src/styles/main.css */
-
-body {
-  font-family: 'Heebo', sans-serif;
-}
-
-/* Additional styles using the "Heebo" font can be added here */
 
 
 .heading {

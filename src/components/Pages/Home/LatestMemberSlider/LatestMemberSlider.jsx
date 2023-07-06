@@ -76,6 +76,7 @@ const LatestMemberSlider = () => {
                     engage in an activity together, most often with the intention.
                 </p>
             </div>
+            {/* lagrge device slider */}
             <div className="relative mt-[30px] hidden sm:block">
                 <Swiper
                     ref={swiperRef}
@@ -115,12 +116,16 @@ const LatestMemberSlider = () => {
                     </div>
                 </div>
             </div>
+            {/* small device slider */}
             <div className="relative mt-[30px] md:hidden w-[275px] mx-auto ">
                 <Swiper
                     ref={swiperRef}
                     slidesPerView={1}
                     spaceBetween={24}
                     freeMode={true}
+                    pagination={{
+                        clickable: true,
+                    }}
                     navigation={{
                         prevEl: ".swiper-button-prev",
                         nextEl: ".swiper-button-next",

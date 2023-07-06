@@ -16,9 +16,9 @@ import image12 from '../../../../assets/Ellipse 47.png';
 
 const SuccessStory = () => {
     return (
-        <div className="md:mt-[148px] mt-[50px] w-[1172px] mx-auto md:flex items-center justify-between gap-[210px] ">
+        <div className="md:mt-[148px] mt-[50px] w-[1280px] mx-auto md:flex items-center justify-between gap-[210px] ">
             <div className="1/2 px-10 ">
-                <h1 className="text-[48px] font-bold">Stories of Success <br />
+                <h1 className=" text-[48px] font-bold text-[#2D2D2D]">Stories of Success <br />
                     are everywhere</h1>
                 <p className="subText mb-[40px] mt-[20px] text-[#5B5B5B]">Dating is a stage of romantic relationships in which <br /> two individuals engage in an activity.</p>
                 <button className="bg-[#FF3D4F] text-white text-[20px] font-normal px-[32px] py-[20px] rounded-[30px]"

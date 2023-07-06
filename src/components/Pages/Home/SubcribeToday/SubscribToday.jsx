@@ -47,9 +47,9 @@ const SubscribToday = () => {
                             <h3 className="text-[24px] font-[500px] text-[#33357D]">Premium </h3>
                             <p className="subText text-[#5B5B5B]">Dating is a stage of romantic</p>
                             <ul className="list-disc subText text-[#5B5B5B] my-[20px] space-y-[10px]">
-                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" >&#x2713;</span>Single User</li>
-                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" >&#x2713;</span>Single User</li>
-                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" >&#x2713;</span>Single User</li>
+                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" > <BsCheckLg/>  </span>Single User</li>
+                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" > <BsCheckLg/>  </span>Single User</li>
+                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" > <BsCheckLg/>  </span>Single User</li>
                             </ul>
                             <button className="px-[32px] py-[20px] text-white rounded-[30px] bg-red-500">Subscribe Now</button>
                         </div>
@@ -72,8 +72,8 @@ const SubscribToday = () => {
                             <h3 className="text-[24px] font-[500px] mb-[10px] text-[#FF3D4F]">Standard </h3>
                             <p className="subText text-[#5B5B5B]">Dating is a stage of romantic</p>
                             <ul className="list-disc subText text-[#5B5B5B] my-[20px] space-y-[10px]">
-                                <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full text-white" >&#x2713;</span>Single User</li>
-                                <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full text-white" >&#x2713;</span>Single User</li>
+                                <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full text-white" > <BsCheckLg/> </span>Single User</li>
+                                <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full text-white" > <BsCheckLg/> </span>Single User</li>
                                 <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#ED3E3E] p-1  rounded-full text-white" > <HiX /> </span>Multi users full access</li>
                             </ul>
                             <button className="px-[32px] py-[20px] text-white rounded-[30px] bg-red-500">Subscribe Now</button>
@@ -99,9 +99,9 @@ const SubscribToday = () => {
                             <h3 className="text-[24px] font-[500px] text-[#33357D]">Premium </h3>
                             <p className="subText text-[#5B5B5B]">Dating is a stage of romantic</p>
                             <ul className="list-disc subText text-[#5B5B5B] my-[20px] space-y-[10px]">
-                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" >&#x2713;</span>Single User</li>
-                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" >&#x2713;</span>Single User</li>
-                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" >&#x2713;</span>Single User</li>
+                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" ><BsCheckLg/></span>Single User</li>
+                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" ><BsCheckLg/></span>Single User</li>
+                                <li className="flex gap-[13px] items-center"> <span className="text-white inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full" ><BsCheckLg/></span>Single User</li>
                             </ul>
                             <button className="px-[32px] py-[20px] text-white rounded-[30px] bg-red-500">Subscribe Now</button>
                         </div>
@@ -124,8 +124,8 @@ const SubscribToday = () => {
                             <h3 className="text-[24px] font-[500px] mb-[10px] text-[#FF3D4F]">Standard </h3>
                             <p className="subText text-[#5B5B5B]">Dating is a stage of romantic</p>
                             <ul className="list-disc subText text-[#5B5B5B] my-[20px] space-y-[10px]">
-                                <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full text-white" >&#x2713;</span>Single User</li>
-                                <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full text-white" >&#x2713;</span>Single User</li>
+                                <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full text-white" ><BsCheckLg/></span>Single User</li>
+                                <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#368977] p-1 rounded-full text-white" ><BsCheckLg/></span>Single User</li>
                                 <li className="flex gap-[13px] items-center"> <span className="inline-flex items-center justify-center h-6 w-6 bg-[#ED3E3E] p-1  rounded-full text-white" > <HiX /> </span>Multi users full access</li>
                             </ul>
                             <button className="px-[32px] py-[20px] text-white rounded-[30px] bg-red-500">Subscribe Now</button>

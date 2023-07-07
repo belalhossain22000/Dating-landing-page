@@ -65,7 +65,7 @@ const ClientSlider = () => {
         <div className="bg-[#FDECEC] ">
             <div className="bg-[#FDECEC] mt-[134px] w-full max-w-[1280px] mx-auto">
                 {/* heading div/section */}
-                <div data-aos='zoom-in-down' data-aos-delay="50" data-aos-duration='2000' className="px-5">
+                <div data-aos='zoom-in-down' data-aos-delay="50" data-aos-duration='1000' className="px-5">
                     <h1 className="heading pt-[92px] text-center mb-[20px]">Clint Say’s</h1>
                     <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
                 </div>

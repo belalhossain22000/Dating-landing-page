@@ -32,7 +32,7 @@ const SuccessStory = () => {
                 <h1 className=" lg:text-[48px] text-[35px] font-bold text-[#2D2D2D]">Stories of Success <br />
                     are everywhere</h1>
                 <p className="subText mb-[40px] mt-[20px] text-[#5B5B5B]">Dating is a stage of romantic relationships in which <br /> two individuals engage in an activity.</p>
-                <button className="bg-[#FF3D4F] text-white text-[20px] font-normal px-[32px] py-[20px] rounded-[30px]"
+                <button className="hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white text-[20px] font-normal px-[32px] py-[20px] rounded-[30px]"
                     style={{ boxShadow: "0px 20px 40px 0px rgba(237, 62, 62, 0.20)" }}
                 >Read More</button>
             </div>

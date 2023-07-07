@@ -28,7 +28,7 @@ const Features = () => {
                 <h1 className="heading text-center">Our Features</h1>
                 <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
             </div>
-            <div className='md:flex items-center justify-between gap-[124px] mt-[40px]'>
+            <div className='md:flex items-center lg:justify-between lg:gap-[124px] mt-[40px]'>
                 <div className='relative px-5'  >
                     <div>
                         <div className='md:w-[400px] '>
@@ -36,12 +36,13 @@ const Features = () => {
                             <img data-aos='fade-left' data-aos-delay="50" data-aos-duration='2000' className='absolute top-0  w- h-full ' src={image2} alt="" />
                         </div>
                     </div>
+                    {/* gradient circle */}
                     <div
                         data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='3000'
-                        className='h-[200px] w-[200px] bg-gradient-to-b from-red-500 to-blue-900 shadow-lg rounded-full flex flex-col justify-center items-center absolute top-[170px] right-[20px] md:top-[110px] md:right-[-90px] text-white'>
-                        <p>Start Now For</p>
-                        <h4>FREE</h4>
-                        <p>7 Day Trail</p>
+                        className='h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-gradient-to-b from-red-500 to-blue-900 shadow-lg rounded-full flex flex-col justify-center items-center absolute top-[200px] md:top-[220px] right-[20px] lg:top-[110px] lg:right-[-90px] text-white'>
+                        <p className='text-lg font-normal'>Start Now For</p>
+                        <h4 className='text-2xl font-medium'>FREE</h4>
+                        <p className='text-lg font-normal'>7 Day Trail</p>
                     </div>
                 </div>
 
@@ -53,8 +54,8 @@ const Features = () => {
                         className='flex items-center gap-[39px] text-gray-600
                      '>
                         <div    
-                            className='bg-[#C64EF2] h-[81px] w-[81px] rounded-full flex justify-center items-center'>
-                            <TbMessage className='text-[38px] text-white' />
+                            className='bg-[#C64EF2] h-[60px] w-[60px] lg:h-[81px] lg:w-[81px] rounded-full flex justify-center items-center'>
+                            <TbMessage className='lg:text-[38px] text-[35px] text-white' />
                         </div>
                         <div>
                             <h3 className='text-[24px] font-medium'>Private Chat</h3>
@@ -64,8 +65,8 @@ const Features = () => {
                     <div
                         data-aos='fade-left' data-aos-delay="200" data-aos-duration='2000'
                         className='flex items-center gap-[39px] text-gray-600'>
-                        <div className='bg-[#33357D] h-[81px] w-[81px] rounded-full flex justify-center items-center'>
-                            <img src={frame} className='h-[38px] w-[38px] text-white' />
+                        <div className='bg-[#33357D] h-[60px] w-[60px] lg:h-[81px] lg:w-[81px] rounded-full flex justify-center items-center'>
+                            <img src={frame} className='lg:h-[38px] lg:w-[38px] h-[30px] w-[30px] text-white' />
                         </div>
                         <div>
                             <h3 className='text-[24px] font-medium'>Facebook Login</h3>
@@ -75,8 +76,8 @@ const Features = () => {
                     <div
                         data-aos='fade-right' data-aos-delay="200" data-aos-duration='2000'
                         className='flex items-center gap-[39px] text-gray-600'>
-                        <div className='bg-[#FF3D4F] h-[81px] w-[81px] rounded-full flex justify-center items-center'>
-                            <TfiWorld className='text-[38px] text-white' />
+                        <div className='bg-[#FF3D4F] h-[60px] w-[60px] lg:h-[81px] lg:w-[81px] rounded-full flex justify-center items-center'>
+                            <TfiWorld className='lg:text-[38px] text-[35px] text-white' />
                         </div>
                         <div>
                             <h3 className='text-[24px] font-medium'>Discovery Setting</h3>

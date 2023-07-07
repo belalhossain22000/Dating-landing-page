@@ -60,15 +60,14 @@ const ClientSlider = () => {
 
                 {/* slider section  */}
                 {/* medium device slider */}
-                <div className="mt-[40px] pb-[150px]  hidden sm:block">
+                <div className="mt-[40px] pb-[150px]   hidden sm:block">
                     <Swiper
                         slidesPerView={3}
                         spaceBetween={30}
                         pagination={{
                             clickable: true,
                             style: { background: '#ED3E3E' },
-                            // Change the active dot color here
-                            bulletActiveClass: 'swiper-pagination-bullet-active-custom',
+                            
                         }}
                         modules={[Pagination]}
                         className="mySwiper"

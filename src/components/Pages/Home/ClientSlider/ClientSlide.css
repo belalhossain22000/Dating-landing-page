@@ -1,12 +1,22 @@
-/* Custom active dot color */
-.swiper-pagination-bullet-active-custom {
-    background-color: #ED3E3E;
-  }
-  
-  /* Custom position */
-  .mySwiper .swiper-pagination {
-    position: absolute;
-    z-index: 100;
-    bottom: '';
-  }
-  
+.swiper-pagination-bullet {
+  background-color: #fdecec;
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  /* transform: translateY(-100px); */
+ /* padding-top:; */
+ bottom: -40px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ed3e3e;
+}
+
+/* .swiper-pagination {
+  position: absolute;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  bottom: 40px !important;
+  top: calc(50% - var(--add-bottom) / 2)
+} */

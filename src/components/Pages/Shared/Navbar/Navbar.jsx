@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
         <nav className="  ">
-            <div className="w-full px-5 md:mx-auto md:w-[1280px]  pt-[56px] text-[20px]">
+            <div className="w-full px-5 md:mx-auto xl:w-[1280px]   pt-[56px] text-[20px]">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <Link to='/'> <div className="flex-shrink-0 flex items-center gap-[10px] text-[18px] font-bold">
@@ -34,7 +34,7 @@ const Navbar = () => {
 
                     {/* Desktop navigation */}
                     <div className="hidden md:flex items-center text-[#676767]   ">
-                        <div className="ml-[293px] flex items-baseline gap-[50px] text-[20px] font-normal  ">
+                        <div className="lg:ml-[293px] flex items-baseline lg:gap-[50px] text-[20px] font-normal  ">
                             <Link
                                to="#"
                                 className="hover:text-orange-500  px-3 py-2 rounded-md text-xl font-medium "
@@ -67,7 +67,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Right side buttons */}
-                    <div className="hidden md:ml-[118px] md:flex items-center  gap-[50px] ">
+                    <div className="hidden lg:ml-[118px] md:flex items-center  gap-[50px] ">
                         <Link>
                             <button className=" hover:text-orange-500  text-[#676767] text-xl  px-3 py-2 rounded-md font-medium">
                                 Login

@@ -13,7 +13,7 @@ const SubscribToday = () => {
 
 
     return (
-        <div className="md:mt-[130px] md:w-[1280px] mx-auto bg-red-70">
+        <div className="md:mt-[130px] mt-[80px] w-full max-w-[1280px] mx-auto bg-red-70">
             {/* heading */}
             <div>
                 <h1 className='heading text-center mb-5'>Subscribe Today</h1>
@@ -26,7 +26,7 @@ const SubscribToday = () => {
             </div>
             {/* card */}
             {/* monthly */}
-            {!active && <div className='md:flex items-center justify-center space-y-5 gap-[322px]'>
+            {!active && <div className='md:flex items-center justify-center space-y-5 md:gap-[100px] lg:gap-[322px]'>
                 {/* ls card */}
                 <div className='mt-[40px] flex md:gap-[56px] '>
                     <div className='h-[400px] w-[275px] mx-auto md:mx-0 bg-[#FFF] rounded-[50px] px-[23px] py-[61px] ' style={{ boxShadow: "0px 30px 60px 0px rgba(238, 68, 68, 0.15)" }}>
@@ -77,7 +77,7 @@ const SubscribToday = () => {
             </div>}
 
             {/* yearly */}
-            {active && <div className='md:flex items-center justify-center space-y-5 gap-[322px]'>
+            {active && <div className='md:flex items-center justify-center space-y-5 md:gap-[100px] lg:gap-[322px]'>
                 {/* ls card */}
                 <div className='mt-[40px] flex md:gap-[56px]'>
                     <div className='h-[400px] w-[275px] mx-auto md:mx-0 bg-[#FFF] rounded-[50px] px-[23px] py-[61px] ' style={{ boxShadow: "0px 30px 60px 0px rgba(238, 68, 68, 0.15)" }}>

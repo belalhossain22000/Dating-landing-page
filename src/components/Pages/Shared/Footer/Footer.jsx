@@ -9,7 +9,7 @@ import { FaGooglePlusG, FaFacebookF, FaTwitter } from 'react-icons/fa';
 const Footer = () => {
     return (
         <div className='bg-[#ED3E3E] text-white mt-[80px] md:mt-[251px] relative'>
-            <div className=" grid grid-cols-2 md:grid-cols-4 md:w-[1172px] space-y-10 md:space-y-0  text-center md:mx-auto pb-[55px] pt-[226px]  gap-[18px] px-5 md:px-0">
+            <div className=" grid grid-cols-2 md:grid-cols-4 max-w-[1172px] w-full space-y-10 md:space-y-0  text-center md:mx-auto pb-[55px] pt-[226px]  gap-[18px] px-5 md:px-0">
                 <div className='space-y-5'>
 
                     <div className='flex items-center justify-center gap-5'>

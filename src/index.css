@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+*{
+  font-family: 'Heebo', sans-serif;
+}
 
 .heading {
     @apply  md:text-[82px] text-[50px] font-bold  ;

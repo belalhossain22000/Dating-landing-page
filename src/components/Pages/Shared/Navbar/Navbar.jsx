@@ -4,6 +4,8 @@ import { HiX } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import icon from '../../../../assets/Frame.png';
 import icon2 from '../../../../assets/Frame (2).png';
+import loveli from '../../../../assets/Lovelli.png';
+import signUp from '../../../../assets/Group 10.png';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,9 +19,9 @@ const Navbar = () => {
             <div className="w-full px-5 md:mx-auto xl:w-[1280px]   pt-[56px] text-[20px]">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <Link to='/'> <div className="flex-shrink-0 flex items-center gap-[10px] text-[18px] font-bold">
+                    <Link to='/'> <div className="flex-shrink-0 w-[83px] h-[27px] flex items-center gap-[10px] text-[18px] font-bold">
                         <img className='h-[19px] w-15px ' src={icon2} alt="" />
-                        <h1 className='text-lg text-[#5B5B5B]'> Lovelli</h1>
+                        <img src={loveli} alt="" />
                     </div></Link>
 
                     {/* Mobile menu button */}
@@ -77,7 +79,7 @@ const Navbar = () => {
                             <button className="flex items-center justify-center gap-[9px] text-[15px] rounded-[30px] bg-[#FF3D4F]  text-white
                         hover:bg-white border-1 text-xl border hover:border-[#FF3D4F] hover:text-[#FF3D4F] w-[160px] h-[60px]  ">
 
-                                <img className='h-5 w-5  bg-[#FF3D4F]' src={icon} alt="" />
+                                <img className='h-5 w-5 bg-[#FF3D4F] ' src={signUp} alt="" />
                                 Sign Up
                             </button>
                         </Link>

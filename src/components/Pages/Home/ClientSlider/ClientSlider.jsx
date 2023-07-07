@@ -9,6 +9,10 @@ import './ClientSlide.css';
 import image1 from '../../../../assets/Group 820.png';
 import ClientCard from "../../../../utilities/ClientCard/ClientCard";
 
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const slidesData = [
     {
         image: image1,
@@ -49,21 +53,29 @@ const slidesData = [
 
 
 const ClientSlider = () => {
+    // Initialize AOS
+    useEffect(() => {
+        AOS.init({}); 
+
+        return () => {
+            AOS.refresh(); // Refresh AOS on component unmount
+        };
+    }, []);
     return (
         <div className="bg-[#FDECEC] ">
             <div className="bg-[#FDECEC] mt-[134px] w-full max-w-[1280px] mx-auto">
                 {/* heading div/section */}
-                <div className="px-5">
+                <div data-aos='zoom-in-down' data-aos-delay="50" data-aos-duration='2000' className="px-5">
                     <h1 className="heading pt-[92px] text-center mb-[20px]">Clint Say’s</h1>
                     <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
                 </div>
 
                 {/* slider section  */}
                 {/* medium device slider */}
-                <div className="mt-[40px] pb-[150px]   hidden sm:block md:block">
+                <div data-aos='zoom-out-up' data-aos-delay="50" data-aos-duration='2000'  className="mt-[40px] pb-[150px]   hidden sm:block md:block">
                     <Swiper
                         slidesPerView={3}
-                        spaceBetween={30}
+                        spaceBetween={24}
                         pagination={{
                             clickable: true,
                             style: { background: '#ED3E3E' },

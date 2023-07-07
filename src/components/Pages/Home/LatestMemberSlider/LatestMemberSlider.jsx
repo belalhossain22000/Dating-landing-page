@@ -6,6 +6,9 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 SwiperCore.use([Navigation]);
 
@@ -63,12 +66,20 @@ const LatestMemberSlider = () => {
             swiperRef.current.swiper.slideNext();
         }
     };
+// Initialize AOS
+    useEffect(() => {
+        AOS.init({}); 
+
+        return () => {
+            AOS.refresh(); // Refresh AOS on component unmount
+        };
+    }, []);
 
 
 
     return (
-        <div className="mt-16 md:w-[1172px] mx-auto">
-            <div className="px-5">
+        <div  data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='1000'  className="mt-16 md:w-[1172px] mx-auto">
+            <div  data-aos='fade-right' data-aos-delay="50" data-aos-duration='3000'  className="px-5">
                 <h1 className="heading text-center mb-5">Latest Register Member</h1>
                 <p className="subText text-center">
                     Dating is a stage of romantic relationships in which two individuals
@@ -77,7 +88,7 @@ const LatestMemberSlider = () => {
                 </p>
             </div>
             {/* lagrge device slider */}
-            <div className="relative mt-[30px] hidden sm:block">
+            <div  data-aos='fade-left' data-aos-delay="50" data-aos-duration='3000' className="relative mt-[30px] hidden sm:block">
                 <Swiper
                     ref={swiperRef}
                     slidesPerView={4}

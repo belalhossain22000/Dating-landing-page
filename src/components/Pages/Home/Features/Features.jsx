@@ -24,7 +24,7 @@ const Features = () => {
 
     return (
         <div className="md:mt-[130px] mt-[80px] w-full max-w-[1280px] mx-auto">
-            <div className='px-10'>
+            <div data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='2000' className='px-10'>
                 <h1 className="heading text-center">Our Features</h1>
                 <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
             </div>

@@ -1,22 +1,19 @@
 .swiper-pagination-bullet {
-  background-color: #fdecec;
+  background-color: #D7D7D7;
   opacity: 1;
   width: 18px;
   height: 18px;
-  /* transform: translateY(-100px); */
- /* padding-top:; */
- bottom: -40px;
+ 
 }
 .swiper-pagination-bullet-active {
   background-color: #ed3e3e;
 }
 
-/* .swiper-pagination {
-  position: absolute;
+.swiper-pagination {
+  position: static;
   text-align: center;
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
-  bottom: 40px !important;
-  top: calc(50% - var(--add-bottom) / 2)
-} */
+  margin-top: 40px;
+}

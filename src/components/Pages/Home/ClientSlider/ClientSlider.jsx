@@ -9,7 +9,7 @@ import './ClientSlide.css';
 import image1 from '../../../../assets/Group 820.png';
 import ClientCard from "../../../../utilities/ClientCard/ClientCard";
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -53,6 +53,32 @@ const slidesData = [
 
 
 const ClientSlider = () => {
+    //slider responsive
+    const [slidesPerView, setSlidesPerView] = useState(3);
+
+    useEffect(() => {
+        const handleResize = () => {
+          const windowWidth = window.innerWidth;
+            
+          if (windowWidth >= 1280) {
+            setSlidesPerView(3);
+          } else if (windowWidth >= 1024) {
+            setSlidesPerView(2);
+          } else if (windowWidth >= 768) {
+            setSlidesPerView(2);
+          } else {
+            setSlidesPerView(1);
+          }
+        };
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleResize);
+        };
+      }, []);
+
     // Initialize AOS
     useEffect(() => {
         AOS.init({}); 
@@ -71,10 +97,10 @@ const ClientSlider = () => {
                 </div>
 
                 {/* slider section  */}
-                {/* medium device slider */}
-                <div data-aos='zoom-out-up' data-aos-delay="50" data-aos-duration='2000'  className="mt-[40px] pb-[150px]   hidden sm:block md:block">
+            
+                <div data-aos='zoom-out-up' data-aos-delay="50" data-aos-duration='2000'  className="mt-[40px] pb-[150px] lg:w-[800px] lg:mx-auto xl:w-full md:mx-2">
                     <Swiper
-                        slidesPerView={3}
+                        slidesPerView={slidesPerView}
                         spaceBetween={24}
                         pagination={{
                             clickable: true,
@@ -89,28 +115,6 @@ const ClientSlider = () => {
                                 <ClientCard slide={slide}></ClientCard>
                             </SwiperSlide>
                         ))}
-                    </Swiper>
-                </div>
-
-
-                {/* small device slider */}
-                <div className="mt-[40px] pb-[180px] px-5 md:hidden lg:hidden w-[374px] mx-auto h-[372px]">
-                    <Swiper
-                        slidesPerView={1}
-                        spaceBetween={30}
-                        pagination={{
-                            clickable: true,
-                            style: { background: '#ED3E3E' },
-                        }}
-                        modules={[Pagination]}
-                        className="mySwiper"
-
-                    >
-                        {
-                            slidesData.map((slide, index) => <SwiperSlide key={index}>
-                                <ClientCard slide={slide}></ClientCard>
-                            </SwiperSlide>)
-                        }
                     </Swiper>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper";
 
@@ -66,9 +66,36 @@ const LatestMemberSlider = () => {
             swiperRef.current.swiper.slideNext();
         }
     };
-// Initialize AOS
+
+    // slider responsive
+    const [slidesPerView, setSlidesPerView] = useState(4);
+
     useEffect(() => {
-        AOS.init({}); 
+        const handleResize = () => {
+            const windowWidth = window.innerWidth;
+
+            if (windowWidth >= 1280) {
+                setSlidesPerView(4);
+            } else if (windowWidth >= 1024) {
+                setSlidesPerView(3);
+            } else if (windowWidth >= 768) {
+                setSlidesPerView(2);
+            } else {
+                setSlidesPerView(1);
+            }
+        };
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+    // Initialize AOS
+    useEffect(() => {
+        AOS.init({});
 
         return () => {
             AOS.refresh(); // Refresh AOS on component unmount
@@ -78,8 +105,8 @@ const LatestMemberSlider = () => {
 
 
     return (
-        <div  data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='1000'  className="mt-16 md:w-[1172px] mx-auto">
-            <div  data-aos='fade-right' data-aos-delay="50" data-aos-duration='3000'  className="px-5">
+        <div data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='1000' className="mt-16 md:w-[1172px] mx-auto">
+            <div data-aos='fade-right' data-aos-delay="50" data-aos-duration='3000' className="px-5">
                 <h1 className="heading text-center mb-5">Latest Register Member</h1>
                 <p className="subText text-center">
                     Dating is a stage of romantic relationships in which two individuals
@@ -88,10 +115,10 @@ const LatestMemberSlider = () => {
                 </p>
             </div>
             {/* lagrge device slider */}
-            <div  data-aos='fade-left' data-aos-delay="50" data-aos-duration='3000' className="relative mt-[30px] hidden sm:block">
+            <div data-aos='fade-left' data-aos-delay="50" data-aos-duration='3000' className="relative mt-[30px] md:w-[600px] lg:w-[900px] xl:w-full md:ml-[7%] lg:ml-[6%] xl:ml-0 hidden sm:block">
                 <Swiper
                     ref={swiperRef}
-                    slidesPerView={4}
+                    slidesPerView={slidesPerView}
                     spaceBetween={24}
                     freeMode={true}
                     navigation={{
@@ -103,8 +130,10 @@ const LatestMemberSlider = () => {
                 >
                     {
                         slidesData.map((card, index) => (
-                            <SwiperSlide key={index}>
-                                <Card card={card} />
+                            <SwiperSlide key={index} >
+                                <div className="w-[275px]">
+                                    <Card card={card} />
+                                </div>
                             </SwiperSlide>
                         ))
                     }

@@ -17,6 +17,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const SuccessStory = () => {
+  
 
     useEffect(() => {
         AOS.init({}); // Initialize AOS
@@ -27,8 +28,8 @@ const SuccessStory = () => {
     }, []);
 
     return (
-        <div className="md:mt-[148px] mt-[50px] w-full max-w-[1280px] mx-auto md:flex items-center lg:gap-[210px] ">
-            <div data-aos='fade-right' data-aos-delay="50" data-aos-duration='2000' className="1/2 px-10 md:text-left text-center">
+        <div className="md:mt-[148px] mt-[50px] w-full max-w-[1280px] mx-auto lg:flex items-center xl:gap-[210px] ">
+            <div data-aos='fade-right' data-aos-delay="50" data-aos-duration='2000' className="1/2 px-10  lg:text-left text-center">
                 <h1 className=" lg:text-[48px] text-[35px] font-bold text-[#2D2D2D]">Stories of Success <br />
                     are everywhere</h1>
                 <p className="subText mb-[40px] mt-[20px] text-[#5B5B5B]">Dating is a stage of romantic relationships in which <br /> two individuals engage in an activity.</p>
@@ -44,7 +45,7 @@ const SuccessStory = () => {
                         <img src={circle} alt="" />
                     </div>
                     {/* mini circle images */}
-                    <div data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='3000' className='absolute md:top-[173px]  md:right-[150px] top-[130px] right-[37%]'>
+                    <div data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='3000' className={`absolute md:top-[173px]  md:right-[150px] top-[25%]  right-[33%]`}>
                         <div className='relative flex justify-center items-center h-[136px] w-[136px]'>
                             <img src={image1} alt="" />
                             <img className='absolute top-0 left-0 -z-10' src={image12} alt="" />
@@ -74,7 +75,7 @@ const SuccessStory = () => {
                             <img className='absolute top-0 left-0 -z-10' src={image11} alt="" />
                         </div>
                     </div>
-                    <div data-aos='fade-up' data-aos-delay="50" data-aos-duration='2000' className='md:right-[30px] right-[5%] bottom-5 md:bottom-8 absolute'>
+                    <div data-aos='fade-up' data-aos-delay="50" data-aos-duration='2000' className='md:right-[30px] right-[5%] bottom-2 md:bottom-8 absolute'>
                         <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
                             <img src={image6} alt="" />
                             <img className='absolute top-0 left-0 -z-10' src={image10} alt="" />

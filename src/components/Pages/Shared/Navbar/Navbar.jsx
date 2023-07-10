@@ -89,7 +89,7 @@ const Navbar = () => {
                     {/* Mobile navigation */}
                     {isMenuOpen && (
                         <div className={` text-white lg:hidden h-[] w-[200px]  absolute z-10 top-24 right-5 rounded-lg bg-[#33357D] ${isMenuOpen?' transition-all duration-300 ease-in-out':''}`} >
-                            <div className="px-2 pt-2 pb-3 sm:px-3 ">
+                            <div className="px-2 pt-2  sm:px-3 ">
                                 <Link
                                    to="#"
                                     className="hover:text-orange-500  block px-3 py-2 rounded-md text-base font-medium"
@@ -116,13 +116,13 @@ const Navbar = () => {
                                 </Link>
                             </div>
                             {/* button  */}
-                            <div className="px-2 pt-2 pb-3 sm:px-3  ">
-                                <button className=" hover:text-orange-500 text-[20px] text-white px-3 py-2 rounded-md text-xl font-medium">
+                            <div className="px-2 sm:px-3 pb-5 ">
+                                <button className=" hover:text-orange-500 text-[20px] text-white px-3  rounded-md text-xl font-medium">
                                     Login
                                 </button>
-                                <button className="-ml-5 flex items-center gap-[9px] text-[15px] rounded-[30px]  px-[32px] py-[22px] hover:text-orange-500">
+                                <button className="hover:bg-white mt-3 hover:text-[#FF3D4F] border-[1px] border-[#FF3D4F] flex items-center gap-[9px] text-[15px] rounded-[30px]  px-[10px] py-[5px] text-white bg-[#FF3D4F]">
 
-                                    <img className='h-4 w-4' src={signUp} alt="" />
+                                    <img className='h-4 w-4 hover:bg-[#FF3D4F]' src={signUp} alt="" />
                                     Sign Up
                                 </button>
 

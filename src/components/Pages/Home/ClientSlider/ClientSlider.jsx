@@ -56,9 +56,9 @@ const ClientSlider = () => {
     //slider responsive
     const [slidesPerView, setSlidesPerView] = useState(3);
 
+    const windowWidth = window.innerWidth;
     useEffect(() => {
         const handleResize = () => {
-          const windowWidth = window.innerWidth;
             
           if (windowWidth >= 1280) {
             setSlidesPerView(3);
@@ -88,7 +88,7 @@ const ClientSlider = () => {
         };
     }, []);
     return (
-        <div className="bg-[#FDECEC] ">
+        <div className="bg-[#FDECEC]">
             <div className="bg-[#FDECEC] mt-[134px] w-full max-w-[1280px] mx-auto">
                 {/* heading div/section */}
                 <div data-aos='zoom-in-down' data-aos-delay="50" data-aos-duration='1000' className="px-5">
@@ -98,8 +98,9 @@ const ClientSlider = () => {
 
                 {/* slider section  */}
             
-                <div data-aos='zoom-out-up' data-aos-delay="50" data-aos-duration='2000'  className="mt-[40px] pb-[150px] lg:w-[800px] lg:mx-auto xl:w-full md:mx-2">
-                    <Swiper
+                <div data-aos='zoom-out-up' data-aos-delay="50" data-aos-duration='2000'  className={`mt-[40px] ${windowWidth === 425?' ml-5':''} md:ml-0 pb-10 md:pb-[150px] lg:w-[800px] lg:mx-auto xl:w-full md:mx-2`}>
+                   <div>
+                     <Swiper
                         slidesPerView={slidesPerView}
                         spaceBetween={24}
                         pagination={{
@@ -116,6 +117,7 @@ const ClientSlider = () => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
+                   </div>
                 </div>
             </div>
         </div>

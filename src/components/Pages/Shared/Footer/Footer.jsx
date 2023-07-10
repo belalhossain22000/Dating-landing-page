@@ -18,7 +18,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <div className='bg-[#ED3E3E] text-white mt-[80px] md:mt-[251px] relative'>
+        <div className='bg-[#ED3E3E] text-white mt-[80px] md:mt-[150px] lg:mt-[251px] relative'>
             <div className=" grid grid-cols-2 md:grid-cols-4 max-w-[1172px] w-full space-y-10 md:space-y-0  text-center md:mx-auto pb-[55px] pt-[226px]  gap-[18px] px-5 md:px-0">
                 <div className='space-y-5'>
 
@@ -70,7 +70,7 @@ const Footer = () => {
                 </p>
             </div>
             <div className='px-[134px] flex justify-center' style={{ boxShadow: '0px 20px 100px 0px rgba(0, 0, 0, 0.15)' }}>
-                <div  data-aos='fade-right' data-aos-delay="50" data-aos-duration='2000'  className='bg-white px-12 md:px-0 md:w-[772px] rounded-[20px] text-center py-[45px] absolute md:top-[-121px] top-[-80px]' style={{ boxShadow: '0px 20px 100px 0px rgba(0, 0, 0, 0.15)' }}>
+                <div  data-aos='fade-right' data-aos-delay="50" data-aos-duration='2000'  className='bg-white px-12 md:px-0 md:w-[500px] lg:w-[772px] rounded-[20px] text-center py-[45px] absolute md:top-[-121px] top-[-80px]' style={{ boxShadow: '0px 20px 100px 0px rgba(0, 0, 0, 0.15)' }}>
                     <h1 data-aos='fade-left' data-aos-delay="50" data-aos-duration='1000' className='text-[#2D2D2D] font-[700px] text-[24px]'>Ready To Get Started</h1>
                     <p  data-aos='fade-left' data-aos-delay="50" data-aos-duration='2000' className='text-[#5B5B5B] font-normal text-[18px] pt-[11px]'>Dating is a stage of romantic</p>
                     <div className=' pt-[20px] flex items-center gap-[24px] justify-center'>

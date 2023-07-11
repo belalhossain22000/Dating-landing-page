@@ -43,7 +43,7 @@ const Reveals = ({ children }) => {
                 bottom:4,
                 left:0,
                 right:0,
-                background:"linear-gradient(to right, #9215C5, #3116D2)",
+                background:"#FF3D4F",
                 zIndex:'20'
             }}
            >

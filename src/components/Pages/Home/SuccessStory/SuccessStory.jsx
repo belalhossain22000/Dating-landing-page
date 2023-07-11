@@ -16,8 +16,9 @@ import image12 from '../../../../assets/Ellipse 47.png';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Reveals from '../../Reveals/Reveals';
 const SuccessStory = () => {
-  
+
 
     useEffect(() => {
         AOS.init({}); // Initialize AOS
@@ -29,22 +30,30 @@ const SuccessStory = () => {
 
     return (
         <div className="md:mt-[148px] mt-[50px] w-full max-w-[1280px] mx-auto lg:flex items-center xl:gap-[210px] ">
-            <div data-aos='fade-right' data-aos-delay="50" data-aos-duration='2000' className="1/2 px-10  lg:text-left text-center">
-                <h1 className=" lg:text-[48px] text-[35px] font-bold text-[#2D2D2D]">Stories of Success <br />
-                    are everywhere</h1>
-                <p className="subText mb-[40px] mt-[20px] text-[#5B5B5B]">Dating is a stage of romantic relationships in which <br /> two individuals engage in an activity.</p>
-                <button className="hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white text-[20px] font-normal px-[32px] py-[20px] rounded-[30px]"
-                    style={{ boxShadow: "0px 20px 40px 0px rgba(237, 62, 62, 0.20)" }}
-                >Read More</button>
+            <div className="1/2 px-10  lg:text-left text-center">
+                <Reveals>
+                    <h1 className=" lg:text-[48px] text-[35px] font-bold text-[#2D2D2D]">Stories of Success <br />
+                        are everywhere</h1>
+                </Reveals>
+                <Reveals>
+                    <p className="subText mb-[40px] mt-[20px] text-[#5B5B5B]">Dating is a stage of romantic relationships in which <br /> two individuals engage in an activity.</p>
+                </Reveals>
+                <Reveals>
+                    <button className="hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white text-[20px] font-normal px-[32px] py-[20px] rounded-[30px]"
+                        style={{ boxShadow: "0px 20px 40px 0px rgba(237, 62, 62, 0.20)" }}
+                    >Read More</button>
+                </Reveals>
             </div>
             {/* right side div for circle images */}
-            <div  className='flex justify-center'>
+            <div className='flex justify-center'>
+            <Reveals>
                 <div className="1/2 relative px-5 mt-24 w-[468px] ml-0">
                     {/* big circle image  */}
                     <div data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='2000' className='md:w-[468px] '>
                         <img src={circle} alt="" />
                     </div>
                     {/* mini circle images */}
+                    
                     <div data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='3000' className={`absolute md:top-[173px]  md:right-[150px] top-[25%]  right-[33%]`}>
                         <div className='relative flex justify-center items-center h-[136px] w-[136px]'>
                             <img src={image1} alt="" />
@@ -83,6 +92,7 @@ const SuccessStory = () => {
                     </div>
 
                 </div>
+            </Reveals>
             </div>
         </div>
     );

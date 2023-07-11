@@ -21,6 +21,7 @@ import image2 from '../../../../assets/Rectangle 61.png'
 import image3 from '../../../../assets/Rectangle 62.png'
 import image4 from '../../../../assets/Rectangle 63.png'
 import Card from "../../../../utilities/Card/Card";
+import Reveals from "../../Reveals/Reveals";
 
 
 const slidesData = [
@@ -105,14 +106,18 @@ const LatestMemberSlider = () => {
 
 
     return (
-        <div data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='1000' className="mt-16 md:w-[1172px] mx-auto">
-            <div data-aos='fade-right' data-aos-delay="50" data-aos-duration='3000' className="px-5">
+        <div  className="mt-16 md:w-[1172px] mx-auto">
+            <div className="px-5">
+            <Reveals>
                 <h1 className="heading text-center mb-5">Latest Register Member</h1>
+            </Reveals>
+            <Reveals>
                 <p className="subText text-center">
                     Dating is a stage of romantic relationships in which two individuals
                     <br />
                     engage in an activity together, most often with the intention.
                 </p>
+            </Reveals>
             </div>
             {/* lagrge device slider */}
             <div data-aos='fade-left' data-aos-delay="50" data-aos-duration='3000' className="relative mt-[30px] md:w-[600px] lg:w-[900px] xl:w-full md:ml-[7%] lg:ml-[6%] xl:ml-0 hidden sm:block">

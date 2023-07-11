@@ -12,6 +12,7 @@ import ClientCard from "../../../../utilities/ClientCard/ClientCard";
 import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Reveals from "../../Reveals/Reveals";
 
 const slidesData = [
     {
@@ -77,7 +78,7 @@ const ClientSlider = () => {
         return () => {
           window.removeEventListener('resize', handleResize);
         };
-      }, []);
+      }, [windowWidth]);
 
     // Initialize AOS
     useEffect(() => {
@@ -91,14 +92,18 @@ const ClientSlider = () => {
         <div className="bg-[#FDECEC]">
             <div className="bg-[#FDECEC] mt-[134px] w-full max-w-[1280px] mx-auto">
                 {/* heading div/section */}
-                <div data-aos='zoom-in-down' data-aos-delay="50" data-aos-duration='1000' className="px-5">
+                <div  className="px-5">
+                <Reveals>
                     <h1 className="heading pt-[92px] text-center mb-[20px]">Clint Say’s</h1>
+            </Reveals>
+            <Reveals>
                     <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
+            </Reveals>
                 </div>
 
                 {/* slider section  */}
             
-                <div data-aos='zoom-out-up' data-aos-delay="50" data-aos-duration='2000'  className={`mt-[40px] ${windowWidth === 425?' ml-5':''} md:ml-0 pb-10 md:pb-[150px] lg:w-[800px] lg:mx-auto xl:w-full md:mx-2`}>
+                <div  className={`mt-[40px] ${windowWidth === 425?' ml-5':''} md:ml-0 pb-10 md:pb-[150px] lg:w-[800px] lg:mx-auto xl:w-full md:mx-2`}>
                    <div>
                      <Swiper
                         slidesPerView={slidesPerView}

@@ -22,6 +22,7 @@ import image3 from '../../../../assets/Rectangle 62.png'
 import image4 from '../../../../assets/Rectangle 63.png'
 import Card from "../../../../utilities/Card/Card";
 import Reveals from "../../Reveals/Reveals";
+// import { motion} from 'framer-motion'
 
 
 const slidesData = [

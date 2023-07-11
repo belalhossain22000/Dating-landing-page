@@ -17,6 +17,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Reveals from '../../Reveals/Reveals';
+import { motion } from 'framer-motion'
 const SuccessStory = () => {
 
 
@@ -39,60 +40,64 @@ const SuccessStory = () => {
                     <p className="subText mb-[40px] mt-[20px] text-[#5B5B5B]">Dating is a stage of romantic relationships in which <br /> two individuals engage in an activity.</p>
                 </Reveals>
                 <Reveals>
-                    <button className="hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white text-[20px] font-normal px-[32px] py-[20px] rounded-[30px]"
+                    <motion.button whileHover={{
+                        scale: 1.1,
+                        textShadow: '0px 0px 8px #ED3E3E',
+                        boxShadow: '0px 00px 8px #ED3E3E ',
+                    }} className="hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white text-[20px] font-normal px-[32px] py-[20px] rounded-[30px]"
                         style={{ boxShadow: "0px 20px 40px 0px rgba(237, 62, 62, 0.20)" }}
-                    >Read More</button>
+                    >Read More</motion.button>
                 </Reveals>
             </div>
             {/* right side div for circle images */}
             <div className='flex justify-center'>
-            <Reveals>
-                <div className="1/2 relative px-5 mt-24 w-[468px] ml-0">
-                    {/* big circle image  */}
-                    <div data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='2000' className='md:w-[468px] '>
-                        <img src={circle} alt="" />
-                    </div>
-                    {/* mini circle images */}
-                    
-                    <div data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='3000' className={`absolute md:top-[173px]  md:right-[150px] top-[25%]  right-[33%]`}>
-                        <div className='relative flex justify-center items-center h-[136px] w-[136px]'>
-                            <img src={image1} alt="" />
-                            <img className='absolute top-0 left-0 -z-10' src={image12} alt="" />
+                <Reveals>
+                    <div className="1/2 relative px-5 mt-24 w-[468px] ml-0">
+                        {/* big circle image  */}
+                        <div data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='2000' className='md:w-[468px] '>
+                            <img src={circle} alt="" />
                         </div>
-                    </div>
-                    <div data-aos='fade-right' data-aos-delay="50" data-aos-duration='2000' className='absolute top-[30%] md:top-[100px] md:left-[-8px] left-[-5%]'>
-                        <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
-                            <img src={image2} alt="" />
-                            <img className='absolute top-0 left-0 -z-10' src={image7} alt="" />
-                        </div>
-                    </div>
-                    <div data-aos='fade-left' data-aos-delay="50" data-aos-duration='3000' className='absolute top-[30%] md:top-[100px] right-[-3%] md:right-[-40px]'>
-                        <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
-                            <img src={image3} alt="" />
-                            <img className='absolute top-0 left-0 -z-10' src={image9} alt="" />
-                        </div>
-                    </div>
-                    <div data-aos='fade-down' data-aos-delay="50" data-aos-duration='2000' className='absolute md:left-[200px] left-[150px] top-[-38px]'>
-                        <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
-                            <img src={image4} alt="" />
-                            <img className='absolute top-0 left-0 -z-10' src={image8} alt="" />
-                        </div>
-                    </div>
-                    <div data-aos='fade-up' data-aos-delay="50" data-aos-duration='3000' className='absolute md:bottom-8 bottom-0 left-[54px]'>
-                        <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
-                            <img src={image5} alt="" />
-                            <img className='absolute top-0 left-0 -z-10' src={image11} alt="" />
-                        </div>
-                    </div>
-                    <div data-aos='fade-up' data-aos-delay="50" data-aos-duration='2000' className='md:right-[30px] right-[5%] bottom-2 md:bottom-8 absolute'>
-                        <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
-                            <img src={image6} alt="" />
-                            <img className='absolute top-0 left-0 -z-10' src={image10} alt="" />
-                        </div>
-                    </div>
+                        {/* mini circle images */}
 
-                </div>
-            </Reveals>
+                        <div data-aos='zoom-in-up' data-aos-delay="50" data-aos-duration='3000' className={`absolute md:top-[173px]  md:right-[150px] top-[25%]  right-[33%]`}>
+                            <div className='relative flex justify-center items-center h-[136px] w-[136px]'>
+                                <img src={image1} alt="" />
+                                <img className='absolute top-0 left-0 -z-10' src={image12} alt="" />
+                            </div>
+                        </div>
+                        <div data-aos='fade-right' data-aos-delay="50" data-aos-duration='2000' className='absolute top-[30%] md:top-[100px] md:left-[-8px] left-[-5%]'>
+                            <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
+                                <img src={image2} alt="" />
+                                <img className='absolute top-0 left-0 -z-10' src={image7} alt="" />
+                            </div>
+                        </div>
+                        <div data-aos='fade-left' data-aos-delay="50" data-aos-duration='3000' className='absolute top-[30%] md:top-[100px] right-[-3%] md:right-[-40px]'>
+                            <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
+                                <img src={image3} alt="" />
+                                <img className='absolute top-0 left-0 -z-10' src={image9} alt="" />
+                            </div>
+                        </div>
+                        <div data-aos='fade-down' data-aos-delay="50" data-aos-duration='2000' className='absolute md:left-[200px] left-[150px] top-[-38px]'>
+                            <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
+                                <img src={image4} alt="" />
+                                <img className='absolute top-0 left-0 -z-10' src={image8} alt="" />
+                            </div>
+                        </div>
+                        <div data-aos='fade-up' data-aos-delay="50" data-aos-duration='3000' className='absolute md:bottom-8 bottom-0 left-[54px]'>
+                            <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
+                                <img src={image5} alt="" />
+                                <img className='absolute top-0 left-0 -z-10' src={image11} alt="" />
+                            </div>
+                        </div>
+                        <div data-aos='fade-up' data-aos-delay="50" data-aos-duration='2000' className='md:right-[30px] right-[5%] bottom-2 md:bottom-8 absolute'>
+                            <div className='relative flex justify-center items-center h-[98px] w-[98px]'>
+                                <img src={image6} alt="" />
+                                <img className='absolute top-0 left-0 -z-10' src={image10} alt="" />
+                            </div>
+                        </div>
+
+                    </div>
+                </Reveals>
             </div>
         </div>
     );

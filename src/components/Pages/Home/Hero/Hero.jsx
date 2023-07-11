@@ -5,6 +5,7 @@ import 'aos/dist/aos.css';
 import frameImage from '../../../../assets/Union.png'
 import CircleImage from './CircleImage';
 import Reveals from '../../Reveals/Reveals';
+import { motion } from 'framer-motion'
 
 const Hero = () => {
     useEffect(() => {
@@ -17,17 +18,21 @@ const Hero = () => {
 
     return (
         <div className="md:flex justify-between gap-[41px] items-center mt-[46px] relative xl:w-[1280px] md:px-5 w-full mx-auto">
-            <div  className="md:w-1/2 w-full p-4 md:p-0 ">
+            <div className="md:w-1/2 w-full p-4 md:p-0 ">
                 <Reveals>
 
-                    <h1  className="lg:heading text-left text-[40px] md:text-[50px] font-bold"><span className='text-[#FF3D4F]'>Special</span> People <br />
+                    <h1 className="lg:heading text-left text-[40px] md:text-[50px] font-bold"><span className='text-[#FF3D4F]'>Special</span> People <br />
                         Around You</h1>
                 </Reveals>
                 <Reveals>
-                    <p  className="subText text-left mt-5 ">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
+                    <p className="subText text-left mt-5 ">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>
                 </Reveals>
                 <Reveals>
-                    <div  className="md:flex items-center md:gap-[38px]  lg:w-[426px] md:h-[80px] p-5 md:p-0 space-y-5 md:space-y-0  md:ml-0 mt-[40px] md:rounded-l-[20px] rounded-md" style={{ boxShadow: ' 0px 30px 250px 0px rgba(51, 51, 51, 0.20)' }}>
+                    <motion.div whileHover={{
+                                scale:1.2,
+                                textShadow: '0px 0px 8px #ED3E3E',
+                                boxShadow: '0px 00px 8px #ED3E3E ',
+                            }}  className="md:flex items-center md:gap-[38px]  lg:w-[426px] md:h-[80px] p-5 md:p-0 space-y-5 md:space-y-0  md:ml-0 mt-[40px] md:rounded-l-[20px] rounded-md" style={{ boxShadow: ' 0px 30px 250px 0px rgba(51, 51, 51, 0.20)' }}>
                         <select name="selectItem" id="selectItem" className="  w-full md:w-[142px] md:ml-[43px]  md:rounded-l-[20px] rounded-md ">
                             <option value="">I am </option>
                             <option value="item1">Item 1</option>
@@ -40,12 +45,16 @@ const Hero = () => {
                             <option value="item2">Item 2</option>
                             <option value="item3">Item 3</option>
                         </select>
-                        <button className=" bg-[#FF3D4F] w-full lg:px-[20px] py-4 md:py-3 lg:py-[26px] md:rounded-r-[20px] rounded-md text-white hover:bg-white hover:text-[#FF3D4F]  border hover:border-red-500 text-[18px] font-normal">Get Started </button>
+                        <motion.button whileHover={{
+                            scale: 1.1,
+                            textShadow: '0px 0px 8px #ED3E3E',
+                            boxShadow: '0px 00px 8px #ED3E3E ',
+                        }} className=" bg-[#FF3D4F] w-full lg:px-[20px] py-4 md:py-3 lg:py-[26px] md:rounded-r-[20px] rounded-md text-white hover:bg-white hover:text-[#FF3D4F]  border hover:border-red-500 text-[18px] font-normal">Get Started </motion.button>
 
-                    </div>
+                    </motion.div>
                 </Reveals>
             </div>
-            <div  className="md:w-1/2 px-5 md:px-0 ">
+            <div className="md:w-1/2 px-5 md:px-0 ">
                 <Reveals>
                     <img className=' md:w-[564p] md:h-[406px] lg:w-[564px] lg:h-[606px] ' src={frameImage} alt="" />
                 </Reveals>

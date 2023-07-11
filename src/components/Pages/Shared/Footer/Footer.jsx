@@ -7,6 +7,7 @@ import 'aos/dist/aos.css';
 //import icon
 import { FaGooglePlusG, FaFacebookF, FaTwitter } from 'react-icons/fa';
 import Reveals from '../../Reveals/Reveals';
+import { motion } from 'framer-motion'
 
 
 const Footer = () => {
@@ -80,8 +81,16 @@ const Footer = () => {
                     </Reveals>
                     <Reveals>
                         <div className=' pt-[20px] flex items-center gap-[24px] justify-center'>
-                            <button className='hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#ED3E3E] py-[11px] px-[23px] md:py-[21px] md:px-[46px] rounded-[30px]'>Sign Up</button>
-                            <button className='hover:bg-white  hover:text-[#33357D] hover:border-[1px] hover:border-[#33357D]  bg-[#33357D] py-[11px] px-[23px] md:py-[21px] md:px-[46px] rounded-[30px]'>Vew Profile</button>
+                            <motion.button whileHover={{
+                                scale:1.1,
+                                textShadow: '0px 0px 8px #ED3E3E',
+                                boxShadow: '0px 00px 8px #ED3E3E ',
+                            }} className='hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#ED3E3E] py-[11px] px-[23px] md:py-[21px] md:px-[46px] rounded-[30px]'>Sign Up</motion.button>
+                            <motion.button whileHover={{
+                                scale:1.1,
+                                textShadow: '0px 0px 8px #33357D',
+                                boxShadow: '0px 00px 8px #33357D ',
+                            }}  className='hover:bg-white  hover:text-[#33357D] hover:border-[1px] hover:border-[#33357D]  bg-[#33357D] py-[11px] px-[23px] md:py-[21px] md:px-[46px] rounded-[30px]'>Vew Profile</motion.button>
                         </div>
                     </Reveals>
                 </div>

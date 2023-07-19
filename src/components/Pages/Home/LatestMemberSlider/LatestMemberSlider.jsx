@@ -110,7 +110,7 @@ const LatestMemberSlider = () => {
         <div  className="mt-16 md:w-[1172px] mx-auto">
             <div className="px-5">
             <Reveals>
-                <h1 className="heading text-center mb-5">Latest Register Member</h1>
+                <h1 className="text-[40px] md:text-[48px] font-bold text-center mb-5">Latest Register Member</h1>
             </Reveals>
             <Reveals>
                 <p className="subText text-center">
@@ -121,7 +121,7 @@ const LatestMemberSlider = () => {
             </Reveals>
             </div>
             {/* lagrge device slider */}
-            <div data-aos='fade-left' data-aos-delay="50" data-aos-duration='3000' className="relative mt-[30px] md:w-[600px] lg:w-[900px] xl:w-full md:ml-[7%] lg:ml-[6%] xl:ml-0 hidden sm:block">
+            <div  className="relative mt-[30px] md:w-[600px] lg:w-[900px] xl:w-full md:ml-[7%] lg:ml-[6%] xl:ml-0 hidden sm:block">
                 <Swiper
                     ref={swiperRef}
                     slidesPerView={slidesPerView}

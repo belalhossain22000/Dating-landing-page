@@ -94,7 +94,7 @@ const ClientSlider = () => {
                 {/* heading div/section */}
                 <div  className="px-5">
                 <Reveals>
-                    <h1 className="heading pt-[92px] text-center mb-[20px]">Clint Say’s</h1>
+                    <h1 className="text-[40px] md:text-[48px] font-bold pt-[92px] text-center mb-[20px]">Clint Say’s</h1>
             </Reveals>
             <Reveals>
                     <p className="subText text-center">Dating is a stage of romantic relationships in which two individuals <br /> engage in an activity together,most often with the intention.</p>

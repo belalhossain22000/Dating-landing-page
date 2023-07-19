@@ -3,20 +3,16 @@
 import { FaStar } from 'react-icons/fa';
 import { BsStarHalf } from 'react-icons/bs';
 import Reveals from '../../components/Pages/Reveals/Reveals';
-import { motion } from 'framer-motion'
+
 
 const ClientCard = ({ slide }) => {
     const { image, name, title, descriptions } = slide;
 
     return (
-        <motion.div whileHover={{
-            scale: 1.1,
-            textShadow: '0px 0px 8px #ED3E3E',
-            boxShadow: '0px 00px 8px #ED3E3E ',
-        }} className="bg-white py-[43px] px-[36px] w-[374px] h-[352px] " style={{ borderRadius: '50px 50px 0 50px' }}>
-            <Reveals>
-                <img className="h-[72px] w-[72px]" src={image} alt="" />
-            </Reveals>
+        <div className="bg-white py-[43px] px-[36px] w-[374px] h-[352px] " style={{ borderRadius: '50px 50px 0 50px' }}>
+
+            <img className="h-[72px] w-[72px]" src={image} alt="" />
+
             <Reveals>
                 <h3 className="tex-[22px] font-normal text-[#2D2D2D] mt-[22px]">{name}</h3>
             </Reveals>
@@ -29,7 +25,7 @@ const ClientCard = ({ slide }) => {
             <Reveals>
                 <p className="text-[18px] font-normal mt-[20px]">{descriptions}</p>
             </Reveals>
-        </motion.div>
+        </div>
     );
 };
 

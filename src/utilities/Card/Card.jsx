@@ -1,5 +1,5 @@
 import Reveals from "../../components/Pages/Reveals/Reveals";
-import { motion} from 'framer-motion'
+
 
 
 
@@ -11,17 +11,10 @@ const Card = ({ card }) => {
     const { name, image, location } = card || {};
 
     return (
-        <motion.div whileHover={{
-            scale:1.1,
-            textShadow: '0px 0px 15px #ED3E3E',
-            boxShadow: '0px 00px 15px #ED3E3E ',
-        }} 
+        <div
 
             className="text-white relative rounded-[50px]  ">
-            <Reveals>
-                <img className="" src={image} alt="" />
-            </Reveals>
-
+            <img className="" src={image} alt="" />
             <div
                 className="bg-[#FF3D4F] text-center w-full px-[54px] py-[24px] absolute bottom-0" style={{ borderRadius: '0px 0px 50px 0px' }}>
                 <Reveals>
@@ -31,7 +24,7 @@ const Card = ({ card }) => {
                     <p>{location}</p>
                 </Reveals>
             </div>
-        </motion.div>
+        </div>
     );
 };
 

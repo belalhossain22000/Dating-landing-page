@@ -36,7 +36,7 @@ const PopularMember = () => {
 
     return (
         <div className='bg-[#33357D]'>
-            <div className=" mt-[130px]  relative md:h-[625px] xl:w-[1172px] w-full  mx-auto ">
+            <div className=" xlg:mt-[130px] mt-[50px] relative md:h-[625px] xl:w-[1172px] w-full  mx-auto ">
                 <div className="pt-[54px] text-white px-5 ">
 
                     <div className='flex justify-center flex-col'>
@@ -49,10 +49,10 @@ const PopularMember = () => {
                     </div>
 
                 </div>
-                <div className='flex justify-center items-center md:px-5 mt-5 md:mt-0'>
+                <div className='flex justify-center items-center lsm:px-5 mt-5 md:mt-0'>
                     <div
 
-                        className='md:flex md:space-y-0 space-y-5  gap-[24px] mx-auto  items-center mb-[100px] md:absolute top-[288px]'>
+                        className='lsm:flex md:space-y-0 space-y-[30px]  gap-[24px] mx-auto  items-center mb-[100px] md:absolute top-[288px]'>
                         {
                             cardsData.map((card, index) => <Card key={index} card={card} />)
                         }

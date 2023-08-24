@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap"); */
 
-*{
-  font-family: 'Heebo';
+body {
+  font-family: "Heebo";
 }
 
 .heading {
-    @apply  md:text-[82px] text-[50px] font-bold  ;
-  }
+  @apply md:text-[82px] text-[50px] font-bold;
+}
 
-  .subText{
-    @apply text-lg font-normal 
-  }
+.subText {
+  @apply text-lg font-normal;
+}
+.font-width{
+  font-weight: 500;
+}

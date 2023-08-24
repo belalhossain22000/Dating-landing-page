@@ -37,13 +37,13 @@ const SubscribToday = () => {
             {/* butoon  */}
 
             <div className="flex justify-center items-center gap-[38px]   rounded-[30px] border-[1px] w-[212px] mx-auto h-[60px] mt-[40px] py-[5px] px-[7px]">
-                <button onClick={() => setActive(!active)} className={` ${!active ? "bg-[#FF3D4F] py-[11px] px-[22px] rounded-[30px] text-white hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  " : 'text-[#FF6E7B]'} `} >Monthly</button>
-                <button onClick={() => setActive(!active)} className={` ${active ? " bg-[#FF3D4F] py-[11px] px-[22px] rounded-[30px] text-white hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B] " : 'text-[#FF6E7B]'}   `}>Yearly</button>
+                <button onClick={() => setActive(!active)} className={` transition duration-700 ${!active ? "bg-[#FF3D4F] py-[11px] px-[22px] rounded-[30px] text-white hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  " : 'text-[#FF6E7B]'} `} >Monthly</button>
+                <button onClick={() => setActive(!active)} className={` transition duration-700 ${active ? " bg-[#FF3D4F] py-[11px] px-[22px] rounded-[30px] text-white hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B] " : 'text-[#FF6E7B]'}   `}>Yearly</button>
             </div>
 
             {/* card */}
             {/* monthly */}
-            {!active && <div className='md:flex items-center justify-center space-y-5 md:ml-10 lg:ml-0 gap-5 lg:gap-[100px] xl:gap-[322px]'>
+            {!active && <div className='lsm:flex items-center justify-center space-y-5 md:ml-10 lg:ml-0 gap-5 lg:gap-[100px] xl:gap-[322px]'>
                 {/* ls card */}
                 <div className='mt-[40px] flex flex-col-reverse md:flex-row  lg:gap-[56px] '>
                     <div className='h-[400px] w-[275px] mx-auto md:mx-0 bg-[#FFF] rounded-[50px] px-[23px] py-[61px] ' style={{ boxShadow: "0px 30px 60px 0px rgba(238, 68, 68, 0.15)" }}>
@@ -65,7 +65,7 @@ const SubscribToday = () => {
                             </Reveals>
                         </div>
 
-                        <button className=' hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white px-[32px] py-[20px] rounded-[30px] mt-[20px]'>
+                        <button className=' transition duration-700 hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white px-[32px] py-[20px] rounded-[30px] mt-[20px]'>
                             Suscrib Now
                         </button>
 
@@ -104,7 +104,7 @@ const SubscribToday = () => {
                             </Reveals>
                         </div>
 
-                        <button className='hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white px-[32px] py-[20px] rounded-[30px] mt-[20px]'>
+                        <button className=' transition duration-700 hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white px-[32px] py-[20px] rounded-[30px] mt-[20px]'>
                             Suscrib Now
                         </button>
 
@@ -123,7 +123,7 @@ const SubscribToday = () => {
             </div>}
 
             {/* yearly */}
-            {active && <div className='md:flex items-center justify-center space-y-5 md:ml-10 lg:ml-0 gap-5 lg:gap-[100px] xl:gap-[322px]'>
+            {active && <div className='lsm:flex items-center justify-center space-y-5 md:ml-10 lg:ml-0 gap-5 lg:gap-[100px] xl:gap-[322px]'>
                 {/* ls card */}
                 <div className='mt-[40px] flex flex-col-reverse md:flex-row lg:gap-[56px]'>
                     <div className='h-[400px] w-[275px] mx-auto md:mx-0 bg-[#FFF] rounded-[50px] px-[23px] py-[61px] ' style={{ boxShadow: "0px 30px 60px 0px rgba(238, 68, 68, 0.15)" }}>
@@ -145,7 +145,7 @@ const SubscribToday = () => {
                             </Reveals>
                         </div>
 
-                        <button className='hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white px-[32px] py-[20px] rounded-[30px] mt-[20px]'>
+                        <button className='hover:bg-white  transition duration-700 hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white px-[32px] py-[20px] rounded-[30px] mt-[20px]'>
                             Suscrib Now
                         </button>
 
@@ -183,7 +183,7 @@ const SubscribToday = () => {
                             </Reveals>
                         </div>
 
-                        <button className='hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white px-[32px] py-[20px] rounded-[30px] mt-[20px]'>
+                        <button className='hover:bg-white  transition duration-700 hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white px-[32px] py-[20px] rounded-[30px] mt-[20px]'>
                             Suscrib Now
                         </button>
 

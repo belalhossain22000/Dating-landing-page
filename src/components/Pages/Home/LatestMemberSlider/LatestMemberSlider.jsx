@@ -112,7 +112,7 @@ const LatestMemberSlider = () => {
                             slidesPerView: 3,
                             
                         },
-                        1160: {
+                        1280: {
                             slidesPerView: 4,
                             
                         },

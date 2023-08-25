@@ -136,7 +136,7 @@ const LatestMemberSlider = () => {
             {/* btn pev */} 
             <div className="absolute left-0 xl:-left-[5%] top-1/2 transform - z-10">
                 <div
-                    className="w-10 h-10 bg-black text-white transition-all duration-700 flex items-center justify-center rounded-full cursor-pointer"
+                    className="w-10 h-10 hover:bg-black hover:text-white transition-all duration-700 flex items-center justify-center rounded-full cursor-pointer"
                     onClick={goPrev}
                 >
                     <BsArrowLeft className="text-2xl" />
@@ -145,7 +145,7 @@ const LatestMemberSlider = () => {
             {/* btn next */}
             <div className="absolute right-0 xl:right-[-3.5%] top-1/2 transform   z-10">
                 <div
-                    className="w-10 h-10 bg-black text-white transition-all duration-700 flex items-center justify-center rounded-full cursor-pointer"
+                    className="w-10 h-10 hover:bg-black hover:text-white transition-all duration-700 flex items-center justify-center rounded-full cursor-pointer"
                     onClick={goNext}
                 >
                     <BsArrowRight className="text-2xl" />

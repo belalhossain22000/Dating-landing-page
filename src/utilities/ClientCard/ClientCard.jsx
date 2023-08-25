@@ -9,7 +9,7 @@ const ClientCard = ({ slide }) => {
     const { image, name, title, descriptions } = slide;
 
     return (
-        <div className="bg-white py-[43px] px-[36px] w-[374px] h-[352px] " style={{ borderRadius: '50px 50px 0 50px' }}>
+        <div className="bg-white py-[43px] px-[36px] md:w-[300px] xl:w-[374px] h-[352px] " style={{ borderRadius: '50px 50px 0 50px' }}>
 
             <img className="h-[72px] w-[72px]" src={image} alt="" />
 

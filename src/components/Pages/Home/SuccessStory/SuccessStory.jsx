@@ -40,7 +40,7 @@ const SuccessStory = () => {
                     <p className="subText mb-[40px] mt-[20px] text-[#5B5B5B]">Dating is a stage of romantic relationships in which <br /> two individuals engage in an activity.</p>
                 </Reveals>
                 
-                    <button className="hover:bg-white  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white text-[20px] font-normal px-[32px] py-[20px] rounded-[30px]"
+                    <button className="hover:bg-white transition duration-700  hover:text-[#FF6E7B] hover:border-[1px] hover:border-[#FF6E7B]  bg-[#FF3D4F] text-white text-[20px] font-normal px-[32px] py-[20px] rounded-[30px]"
                         style={{ boxShadow: "0px 20px 40px 0px rgba(237, 62, 62, 0.20)" }}
                     >Read More</button>
                 
